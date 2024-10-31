@@ -1,110 +1,168 @@
+<html>
+<head>
+<!--  <link rel="stylesheet" href="assets/css/CGFSHome.css">  -->
+</head>
+<body>
 <style>
-  .EDStyle {
-    font-family: Verdana, Sans-Sefir;
-    color: #595959;
-    font-size: 14px;
-  }
-  .EDHeaderStyle {
-    font-family: Verdana, Sans-Sefir;
-    color: #595959;
-    font-size: 16px;
-    font-weight: bold;
-  }
-</style>
-<Table cellpadding="8">
-  <tr>
-    <td>
-      <span class="EDHeaderStyle"
-        >Joseph A. Kenny <br />
-        Executive Director <br />
-        CGFS, BP, and S/GP</span
-      ><br /><br />
+#aboutContainer{
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 1366px !important;
+	min-height: 400px;
+	font-family: Calibri;
+	font-size: 19px;
+	padding-botom:30px;
+}
+#aboutLeft{
+	width: 500px;
+	float: left;
+	padding: 5px;
+	padding-top: 80px;
 
-      <span class="EDStyle">
-        <p>
-          Serving in a myriad of progressively challenging positions I have had
-          the privilege of working with icons of the Foreign and Civil Service
-          in Washington and Overseas. Most recently, as Counselor for Management
-          Affairs at U.S. Embassy Beirut, classified as a High Threat post, I
-          managed a staff of 140, providing administrative services to State and
-          other USG agencies and was acting Deputy Chief of Mission, as needed.
-        </p>
-        <br />
-        <p>
-          As Executive Director in the Bureau of Medical Services, I was
-          involved with standing up seven Health Units and three Hospitals
-          geographically dispersed in austere environments throughout Iraq to
-          support U.S. personnel. They were mission ready and on schedule at the
-          time of the U.S. Military withdrawal. I also negotiated and signed a
-          major medico-legal agreement with the DOD concerning DNA testing and
-          storage, identification and mortuary services around the globe. I
-          worked collaboratively on a telemedicine initiative with the U.S.
-          Coast Guard to share resources for a state of the art Electronic
-          Medical Records system, with anticipated savings of $12 million over
-          five years.
-        </p>
-        <br />
-        <p>
-          Previously, as Principal Officer of U.S. Consulate General Dhahran,
-          Saudi Arabia I was cited for building a dynamic team through a shared
-          vision and gaining staff buy-in for the strategic agenda. I developed
-          a robust Pol/Econ reporting program, reached out to political and
-          civic leaders, and was seen frequently in the media as the U.S.
-          Representative in the Region. I actively promoted the President's
-          Export Initiative, bringing together U.S. companies and Host Country
-          business leaders. I also endorsed a dynamic program to attract Saudi
-          students to attend American universities. I initiated a vigorous Entry
-          Level Officer mentoring program and improved the morale and welfare of
-          the Consulate community.
-        </p>
-        <br />
-        <p>
-          In the Bureau of Economic, Energy, and Business Affairs as Executive
-          Director I was responsible for overall management of the Bureau. I
-          helped launch the Economic Engagement Matrix for the benefit of the
-          interagency community. Some of my more noteworthy achievements as a
-          Special Assistant to both the DCFO and A/S and CFO included serving on
-          the management team that consolidated the Financial Management Center
-          in Paris and the finance offices in Washington, relocating them to
-          Charleston, SC.
-        </p>
-        <br />
-        <p>
-          In Russia as the senior Financial Management Officer (FMO) for State
-          and thirty-four other USG agencies, I used my problem solving and team
-          building skills in crisis situations to weather the crash of the
-          ruble, intermittent political unrest, Y2K preparations, and the
-          completion of the re-built, de-bugged Embassy. With the Government of
-          Russia I arranged for our LES to join the Social Insurance System and
-          facilitated the withholding of taxes as a counter measure to their
-          harassment by the FSB. Serving as the FMO and Human Resources Officer
-          in Kuwait, I played an active role in the enlargement of the USG
-          presence in country, relocation to a new Embassy compound, and post
-          liberation reconstruction. Earlier in my career at State, I served at
-          Embassy Rome as an FMO, as well as a Budget Analyst in the Bureau of
-          Budget and Planning for two years.
-        </p>
-        <br />
-        <p>
-          Prior to the U.S. Department of State I worked for the U.S. Department
-          of Energy, the management consulting firm of Booz Allen Hamilton, as
-          well as for the multinational oil company of Saudi Aramco in Dhahran,
-          Saudi Arabia. My professional career was launched with the U.S.
-          Government Accountability Office (GAO) after graduating from
-          university.
-        </p>
-        <br />
-        <p>
-          I have Bachelor Degrees (Magna Cum Laude) from the Catholic University
-          of America in Accounting and Economics and an M.B.A. in Finance and
-          International Business from The George Washington University. In 2005,
-          I received an M.S. degree in National Security Strategy from the
-          National War College of the National Defense University. I am the
-          recipient of the Department's Superior Honor, MSIs, and Meritorious
-          Honor Awards. I am married to Sharon Boynton Kenny and we have two
-          sons, Joseph and Patrick.
-        </p>
-        <br />
-      </span>
-    </td></tr
-></Table>
+}
+#aboutLeftTitle{
+	color: #005696;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 27px;
+	width: 450px;
+}
+#aboutLeftText{
+    color: #005696;
+    letter-spacing: 1px;
+    font-size: 19px;
+    text-align: justify;
+    line-height: 27px;
+    padding-top: 24px;
+}
+#aboutLeftLinks ul{ 
+    list-style-type: none;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: none;
+}
+#aboutLeftLinks ul a{
+    color: #fff; 
+    text-decoration: none;
+}
+#aboutLeftLinks ul li{ 
+    background: #005696;
+    width: 316px;
+    padding: 8px;
+    float: right;
+    margin: 10px;		
+}
+#aboutLeftLinks ul li:hover{ 
+    background: #FFC02A;
+    color: #005696;
+
+}
+
+#midHR{
+	width: 20px;
+	height: 1610px;
+	float: left;
+	border-left: 3px solid #005696;
+	margin-left: 12px;
+	margin-top: 60px;
+}
+
+#aboutRight{
+	width: 58%;
+	overflow: hidden;
+	padding: 5px;
+	padding-top: 40px;
+}
+#aboutRightTitle{
+    font-size: 18px;
+    font-family: Calibri;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+#aboutRightName{
+    font-size: 68px;
+    font-family: Calibri Light;
+}
+#aboutRightPosition{
+    font-size: 29px;
+    font-family: Calibri;
+    font-weight: bold;
+    color: #005696;
+    margin-top:-5px;
+    letter-spacing: 1px;
+}
+#aboutRightDivision{
+    font-size: 22px;
+    color: #005696;
+}
+#aboutRightDuration{
+    padding-top: 20px;
+    letter-spacing: 1px;
+    color: #005696;
+}
+#aboutRightText{
+    padding: 10px;
+}
+
+.bulkText{
+    font-family: Calibri;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+#picContainer{
+    padding: 0px 15px 15px 0px;
+	width: 300px;
+}
+</style>
+
+ <div id="aboutContainer">
+  <div id="aboutLeft">
+	<br/>
+	<div id="aboutLeftLinks">
+	 <ul>
+	 <li><a title="Comptroller" href="/sites/CGFS/Pages/Comptroller.aspx">COMPTROLLER</a></li>
+	 <li><a title="Deputy Comptroller DC" href="/sites/CGFS/Pages/DC.aspx">DEPUTY COMPTROLLER (DC)</a></li>
+	 <li><a title="Deputy Comptroller Charleston" href="/sites/CGFS/Pages/DCCharleston.aspx">DEPUTY COMPTROLLER (CHS)</a></li>
+	 <li><a title="ASSOCIATE Comptroller" href="/sites/CGFS/Pages/AC.aspx">ASSOCIATE COMPTROLLER</a></li>
+	</div>
+  </div>
+  <div id="midHR"></div>
+  <div id="aboutRight">
+  	 <div id="aboutRightTitle">
+	 <div id="aboutRightName">Joseph A. Kenny, Jr.</div>
+	 <div id="aboutRightPosition">Executive Director</div>
+	 <div id="aboutRightDivision">CGFS and BP</div>
+	</div>
+	<div id="aboutRightText">
+	 <p class="bulkText"><img id="picContainer"src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/CGFSO365/JosephKenny5.jpg" align="left">A career member of the Senior Executive Service and formerly the Foreign Service, Joseph Kenny is the Executive Director of the Bureau of the Comptroller and Global Financial Services (CGFS) and the Bureau of Budget and Planning (BP). The Executive Office (an ISO 9001 certified organization) is the operational support organization for CGFS's global locations that include Bangkok, Paris, Sophia, Manila, and Charleston, SC, and BP. In this capacity, he oversees the day-to-day administration of the Bureaus, which includes strategic planning, budget formulation and execution, human resources, information technology, cybersecurity, administrative services, and procurement.<br/><br/>    
+
+In his earlier Foreign Service assignments, he served for three years each as the Executive Director of the Bureau of Global Medical Services as well as the Bureau of Economics, Energy, and Business Affairs (EB), where he was responsible for overall management of the Bureaus. In addition, he was the Special Assistant to both the DCFO and the Assistant Secretary and CFO, and he served on the faculty of the National Foreign Affairs Training Center (Foreign Service Institute) as the senior course coordinator and instructor for all Financial Management, Budgeting, ICASS, and related management classes.<br/><br/>    
+
+Previously, as Counselor for Management Affairs at U.S. Embassy Beirut, a High Threat post, he managed a staff of 140, providing administrative services to State and other USG agencies and served as acting Deputy Chief of Mission.<br/><br/>    
+
+As Consul General/Principal Officer of U.S. Consulate General Dhahran, Saudi Arabia he built a dynamic team through a shared vision for the strategic agenda. He developed a robust Political and Economic reporting program, reached out to Saudi political and civic leaders, and appeared frequently in the media as the U.S. Representative in the Region. Mr. Kenny actively promoted the President's Export Initiative, bringing together U.S. companies and host country business leaders. He also endorsed a dynamic program to attract Saudi students to attend American universities. He initiated a vigorous Entry Level Foreign Service Officer mentoring program and improved the morale and welfare of the Consulate community.<br/><br/>    
+
+His other overseas Foreign Service tours included U.S. Embassy Rome Italy, U.S. Embassy Moscow, Russia, and U.S. Embassy Kuwait.<br/><br/>    
+
+Prior to the U.S. Department of State, Mr. Kenny worked for the U.S. Department of Energy, the management consulting firm of Booz Allen Hamilton, as well as for the multinational oil company of Saudi Aramco in Dhahran, Saudi Arabia. His professional career was launched at the U.S. House of Representatives where he worked in his Congressman from Pennsylvania's DC office, and then with the U.S. Government Accountability Office (GAO) where he worked as an auditor and management analyst.<br/><br/>    
+
+His undergraduate degrees are in Economics and Accounting Magna Cum Laude from The Catholic University of America.  He earned a Master of Business Administration in Finance and International Business from The George Washington University, and a Master of Science in National Security Strategy from the National War College, National Defense University, as well as a certificate in Leadership and Management from The Massachusetts Institute of Technology.  He has received several Superior Honor Awards and Meritorious Honor Awards. He is a Certified Financial Planner certificant (CFP®).<br/><br/>    
+
+	</p>
+	</div>
+  </div>
+ </div>
+</body>
+<script src="/sites/CGFS/SiteAssets/icon/jquery.js"></script>
+<script>
+$('document').ready(function() {
+	console.log("Function Called");
+	$('#bufferText')[0].innerText = $('#DeltaPlaceHolderPageTitleInTitleArea')[0].innerText.trim();
+	$("#bufferText")[0].style.fontSize = '77px';
+	$("#bufferText")[0].innerHTML = "Executive Director";
+});
+
+</script>
+</html>
