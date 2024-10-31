@@ -1,0 +1,600 @@
+<html>
+  <head>
+    <!--  <link rel="stylesheet" href="assets/css/CGFSHome.css">  -->
+  </head>
+  <body>
+    <style>
+      #contentBox,
+      #s4-bodyContainer {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 1366px !important;
+        min-height: 400px;
+      }
+
+      #contentRow {
+        padding-top: 0px;
+      }
+
+      #s4-titlerow {
+        height: 332px !important;
+        padding: 0px;
+      }
+
+      #topBanner {
+        width: 1366px;
+        background: url("https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/CGFS-bannerSmall.png");
+        height: 287px;
+      }
+
+      #topContainer {
+        width: 900px;
+      }
+
+      #DosTextArea {
+        overflow: hidden;
+        padding-top: 30px;
+        margin-left: 220px;
+        color: #fff;
+        font-size: 21px;
+        font-family: Calibri Light, Candara, Segoe, "Segoe UI", Optima, Arial,
+          sans-serif;
+        letter-spacing: 2px;
+      }
+
+      #titleAreaBox {
+        background: #005696;
+        margin: 0px;
+        margin-top: 0px;
+        height: 46px;
+      }
+
+      #bufferText {
+        font-size: 78px;
+        margin-left: 220px;
+        color: #fff;
+        font-family: Calibri Light, Candara, Segoe, "Segoe UI", Optima, Arial,
+          sans-serif;
+        margin-top: 48px;
+      }
+
+      .ms-breadcrumb-top {
+        background: #005696 !important;
+        margin-left: 220px;
+      }
+
+      .ms-breadcrumb-box {
+        height: 46px;
+      }
+
+      .ms-pagebreadcrumb {
+        display: none;
+      }
+
+      .ms-verticalAlignTop {
+        vertical-align: middle;
+      }
+
+      #searchInputBox {
+        margin-bottom: 0px !important;
+      }
+
+      #SearchBox {
+        background: #ffffff;
+        margin-right: 10px;
+      }
+
+      ul.dynamic {
+        background-color: #236a9f;
+        width: auto !important;
+        white-space: nowrap !important;
+      }
+      .menu-horizontal .menu-item-text {
+        color: #ffffff;
+      }
+
+      .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+        padding: 5px 20px;
+        color: #fff;
+        background: #236a9f;
+      }
+
+      .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item:hover {
+        background: #ffc02a;
+        color: #236a9f !important;
+      }
+
+      a.static.selected {
+        background: #ffc02a !important;
+        color: #236a9f !important;
+      }
+
+      .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link,
+      .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link {
+        color: #005696 !important;
+      }
+      .ms-core-listMenu-horizontalBox li a {
+        color: #ffffff !important;
+      }
+      .headerText2 {
+        color: #fff;
+        font-size: 19pt;
+        font-family: Arial Black, Arial, sans-serif;
+        line-height: 30px;
+        margin-top: 0px;
+        margin-left: 220px;
+        letter-spacing: 2px;
+      }
+
+      li.dynamic:hover {
+        background: rgba(137, 157, 175, 0.4);
+      }
+
+      #topContainer2 {
+        width: 900px;
+        height: 428px;
+      }
+
+      #sealDiv {
+        background: url("https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/DOSSeal.png")
+          no-repeat;
+        width: 155px;
+        margin: 20px;
+        height: 388px;
+        float: left;
+      }
+
+      #DoSText {
+        overflow: hidden;
+        padding-top: 20px;
+        color: #fff;
+        font-size: 25pt;
+        font-family: Calibri Light, Candara, Segoe, "Segoe UI", Optima, Arial,
+          sans-serif;
+        letter-spacing: 4px;
+      }
+
+      #maxCap {
+        float: left;
+        color: #fff;
+        font-size: 40pt;
+        font-family: Arial Black, Arial, sans-serif;
+        line-height: 47px;
+        letter-spacing: 2px;
+      }
+
+      .headerText {
+        color: #fff;
+        font-size: 25pt;
+        font-family: Arial Black, Arial, sans-serif;
+        letter-spacing: 1px;
+      }
+
+      .headerText3 {
+        color: #fff;
+        font-size: 25pt;
+        font-family: Arial Black, Arial, sans-serif;
+        line-height: 5px;
+      }
+
+      #headerSubText {
+        padding-top: 1px;
+        line-height: 25px;
+        font-family: Calibri, Arial, SANS-SERIF;
+        font-size: 17px;
+        text-align: justify;
+        width: 757px;
+        color: #fff;
+      }
+
+      #aboutBG {
+        background: url("https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/About-overlay.png");
+        width: 575px;
+        height: 65px;
+        font-size: 20px;
+        font-family: ARIAL NARROW, SANS-SERIF;
+        letter-spacing: 3px;
+        margin-left: 180px;
+      }
+
+      #aboutBG p {
+        padding-top: 20px;
+        padding-left: 52px;
+        overflow: hidden;
+      }
+
+      .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid white;
+        float: left;
+        margin-top: 20px;
+      }
+
+      #aboutOverlay {
+        background: url("https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/about us drop.png");
+        width: 575px;
+        height: 158px;
+        margin-left: 180px;
+        display: none;
+      }
+
+      .linkAboutArea ul {
+        padding-left: 0px;
+        margin-top: 0px !important;
+        padding-top: 20px;
+        padding-inline-start: 0px;
+      }
+
+      .linkAboutArea ul li {
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 60px;
+        list-style-type: none;
+      }
+
+      .linkAboutArea ul li a {
+        color: #ffffff;
+        font-family: Calibri Regular, Arial;
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+
+      .linkAboutArea li:hover {
+        list-style-type: none;
+        background: rgba(137, 157, 175, 0.4);
+        padding-left: 15px;
+      }
+
+      .linkAboutArea li a:hover {
+        color: #ffc02a;
+      }
+
+      #DeltaPageStatusBar {
+        margin-top: 42px;
+      }
+
+      .ms-viewheadertr {
+        display: none;
+      }
+
+      .ms-listviewtable .ms-itmhover {
+        font-family: Arial;
+        font-size: 15px;
+      }
+
+      .ms-list-emptyText-compact {
+        padding-left: 34px;
+      }
+
+      .ms-webpart-chrome-title {
+        background: url("https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/location_bar_on.png")
+          no-repeat !important;
+        height: 44px !important;
+      }
+
+      .ms-webpart-titleText.ms-webpart-titleText,
+      .ms-webpart-titleText > a {
+        color: #fff !important;
+        font-family: Arial !important;
+        margin-top: 13px !important;
+        margin-left: 46px !important;
+        font-size: 14px !important;
+        text-transform: uppercase;
+      }
+
+      #footer-CGFS {
+        width: 1366px;
+        height: 236px;
+        background: url("https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/footer.png");
+      }
+
+      #footerSeal {
+        width: 77px;
+        height: 77px;
+        background: url("https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/footer seal.png")
+          no-repeat;
+        float: left;
+        overflow: hidden;
+      }
+
+      #footerLeft {
+        width: 530px;
+        float: left;
+        margin-top: 60px;
+        margin-left: 50px;
+      }
+
+      #footerLeftText {
+        color: #ffffff;
+        font-size: 16pt;
+        float: left;
+        padding: 4px;
+        padding-left: 15px;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+
+      #footerDOS {
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 2px;
+      }
+
+      #footerRight {
+        width: 1366px;
+        height: 220px;
+        padding-top: 16px;
+      }
+
+      #footerRightTitle {
+        color: #fff;
+        font-size: 18pt;
+        font-family: Calibri, Arial;
+      }
+      #footerQLContainer {
+        overflow: hidden;
+        padding-top: 25px;
+      }
+
+      #footerQ {
+        float: left;
+        width: 75px;
+        padding-left: 40px;
+        font-style: italic;
+      }
+
+      #footerL {
+        font-weight: bold;
+        font-style: italic;
+      }
+      #footerQLHR {
+        height: 2px;
+        width: 665px;
+        background: #fff;
+        margin-left: 620px;
+      }
+
+      .footerLinks ul {
+        list-style-type: none;
+        line-height: 20px;
+      }
+      .footerLinks ul li a {
+        color: #fff;
+        font-family: Calibri Regular, Arial;
+        text-decoration: none;
+      }
+      .footerLinks {
+        float: left;
+        font-family: Calibri Regular, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      /* <!--   Main CSS --> */
+      #aboutContainer {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 1366px !important;
+        min-height: 400px;
+        font-family: Calibri;
+        font-size: 19px;
+        padding-botom: 30px;
+      }
+      #aboutLeft {
+        width: 390px;
+        float: left;
+        padding: 5px;
+        padding-top: 80px;
+      }
+      #aboutLeftTitle {
+        color: #005696;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 27px;
+      }
+      #aboutLeftText {
+        color: #005696;
+        letter-spacing: 1px;
+        font-size: 19px;
+        text-align: justify;
+        line-height: 27px;
+        padding-top: 24px;
+      }
+      #aboutLeftLinks ul {
+        list-style-type: none;
+        font-size: 20px;
+        text-align: right;
+        text-decoration: none;
+      }
+      #aboutLeftLinks ul a {
+        color: #fff;
+        text-decoration: none;
+      }
+      #aboutLeftLinks ul li {
+        background: #005696;
+        width: 316px;
+        padding: 8px;
+        float: right;
+        margin: 10px;
+      }
+      #aboutLeftLinks ul li:hover {
+        background: #ffc02a;
+        color: #005696;
+      }
+
+      #midHR {
+        width: 20px;
+        height: 1140px;
+        float: left;
+        border-left: 3px solid #005696;
+        margin-left: 20px;
+        margin-top: 60px;
+      }
+
+      #aboutRight {
+        width: 66%;
+        overflow: hidden;
+        padding: 5px;
+        padding-top: 40px;
+      }
+      #aboutRightTitle {
+        font-size: 18px;
+        font-family: Calibri;
+        margin-left: 30px;
+        margin-bottom: 30px;
+      }
+      #aboutRightName {
+        font-size: 68px;
+        font-family: Calibri Light;
+      }
+      #aboutRightPosition {
+        font-size: 29px;
+        font-family: Calibri;
+        font-weight: bold;
+        color: #005696;
+        margin-top: -5px;
+        letter-spacing: 1px;
+      }
+      #aboutRightDivision {
+        font-size: 22px;
+        color: #005696;
+      }
+      #aboutRightDuration {
+        padding-top: 20px;
+        letter-spacing: 1px;
+        color: #005696;
+      }
+      #aboutRightText {
+        padding: 10px;
+      }
+
+      .bulkText {
+        font-family: Calibri;
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: 1px;
+      }
+
+      #picContainer {
+        padding: 0px 15px 15px 0px;
+        float: left;
+        vertical-align: top;
+      }
+
+      #DeltaPageStatusBar {
+        margin-top: 42px;
+      }
+    </style>
+
+    <div id="aboutContainer">
+      <div id="aboutLeft">
+        <div id="aboutLeftTitle">
+          Comptroller, Bureau of the Comptroller and Global Financial Services
+          (CGFS)
+        </div>
+        <div id="aboutLeftText">
+          <p>
+            The Comptroller, an Assistant Secretary equivalent position, carries
+            out the delegated authorities and responsibilities of the
+            Department's Chief Financial Officer (CFO) and also serves as the
+            Department's Deputy Chief Financial Office (DCFO). The Comptroller
+            leads the CGFS Bureau in supporting the Department's global
+            financial management activities, systems, and services. The
+            Comptroller serves as the primary financial management advisor to
+            the Under Secretary for Management and other Department executives
+            and acts as the Department's external liaison on all matters
+            relating to the Department's worldwide financial management
+            operations. The Comptroller chairs the Department's Management
+            Control Steering Committee (MCSC) and serves as the internal
+            administrative review official for debts collected by the Department
+            domestically and oversees the exercise of debt collection
+            authorities delegated to CGFS by the Under Secretary for Management.
+          </p>
+        </div>
+        <div id="aboutLeftLinks">
+          <ul>
+            <li>
+              <a href="/sites/CGFS/Pages/Comptroller.aspx">COMPTROLLER</a>
+            </li>
+            <li>
+              <a href="/sites/CGFS/Pages/DC.aspx">DEPUTY COMPTROLLER (DC)</a>
+            </li>
+            <li>
+              <a href="/sites/CGFS/Pages/DCCharleston.aspx"
+                >DEPUTY COMPTROLLER (CHS)</a
+              >
+            </li>
+            <li>
+              <a href="/sites/CGFS/Pages/AC.aspx">ASSOCIATE COMPTROLLER</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="midHR"></div>
+      <div id="aboutRight">
+        <div id="aboutRightTitle">
+          <div id="aboutRightName">JAMES A. WALSH</div>
+          <div id="aboutRightPosition">Comptroller</div>
+          <div id="aboutRightDivision">
+            Department of State<br />Bureau of the Comptroller and Global
+            Financial Services
+          </div>
+          <div id="aboutRightDuration">OCTOBER 11, 2022 - PRESENT</div>
+        </div>
+        <div id="aboutRightText">
+          <p class="bulkText">
+            <img
+              id="picContainer"
+              style="width: 300px"
+              src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/James-Walsh-5x7.jpg"
+            />James A. Walsh is the Comptroller for the U.S. Department of State
+            and head of the Bureau of the Comptroller and Global Financial
+            Services (CGFS). <br /><br />
+            As Comptroller, Mr. Walsh carries out the delegated authorities and
+            responsibilities of the Department's Chief Financial Officer (CFO).
+            The Comptroller leads the CGFS Bureau comprised of over 1500 staff
+            in supporting the Department's global financial management
+            activities, systems, and services. The Comptroller serves as the
+            primary financial management advisor to the Under Secretary for
+            Management and other Department executives and acts as the
+            Department's external liaison on all matters relating to the
+            Department's worldwide financial management operations. The
+            Comptroller chairs the Department's Management Control Steering
+            Committee (MCSC) and oversees the exercise of debt collection.
+            <br /><br />
+            Previously, Mr. Walsh served in various senior leadership roles at
+            the Bureau of International Narcotics and Law Enforcement Affairs
+            (INL) including Principal Deputy Assistant Secretary where he
+            performed the duties of Acting Assistant Secretary for nearly two
+            years. Mr. Walsh also served as the Executive Director/Controller
+            for the bureau.
+            <br /><br />
+            Prior to joining the Department, Mr. Walsh worked in the private
+            sector for five years supporting Fortune 500 companies.  He also
+            served nearly eight years in the U.S. Army where he had several
+            overseas deployments leading aviation units.
+            <br /><br />
+            A career member of the Senior Executive Service, Mr. Walsh holds a
+            bachelor’s degree from West Point, and a master’s degree in business
+            administration from Bowie State University. Mr. Walsh received the
+            Presidential Meritorious Rank Award in 2017.
+            <br /><br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/sites/CGFS/SiteAssets/icon/jquery.js"></script>
+  <script>
+    $("document").ready(function () {
+      console.log("Function Called");
+      $("#bufferText")[0].innerText = $(
+        "#DeltaPlaceHolderPageTitleInTitleArea"
+      )[0].innerText.trim();
+    });
+  </script>
+</html>
