@@ -12,7 +12,7 @@
 ></script>
 <script
   type="text/javascript"
-  src="../../../../lib/jquery.HillbillyTabs.2013.js"
+  src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/lib/jquery.HillbillyTabs.2013.js"
 ></script>
 
 <link
