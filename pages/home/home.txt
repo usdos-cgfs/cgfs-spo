@@ -872,7 +872,7 @@
                 <a
                   target="_blank"
                   title="Certifying Officer List"
-                  href="/sites/CGFS-GFS/OMA/FCR/Shared%20Documents/COCUR - Current Certifying Officer Report.pdf"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Download/CGFS%20Certifying%20Officer%20List/COCUR-Current_Certifying_Officer_Report.PDF"
                   >Certifying Officer List</a
                 >
               </li>
