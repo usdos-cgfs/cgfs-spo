@@ -935,6 +935,14 @@
               <li>
                 <a
                   target="_blank"
+                  title="CGFS Training Center of Excellence"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/CGFSTrainingCOE/SitePages/CGFSTraining_COE.aspx"
+                  >CGFS Training Center of Excellence</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
                   title="Support/Help Desk"
                   href="https://usdos.sharepoint.com/sites/CGFS/Pages/SupportDesks-SPO.aspx"
                   >Support/Help Desk</a
