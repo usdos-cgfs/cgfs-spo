@@ -555,7 +555,7 @@
       <div id="midHR"></div>
       <div id="aboutRight">
         <div id="aboutRightTitle">
-          <div id="aboutRightName">Matthew Simiskey</div>
+          <div id="aboutRightName">Susan Astley-Cass</div>
           <div id="aboutRightPosition">Associate Comptroller</div>
           <div id="aboutRightDivision">
             Department of State<br />Bureau of the Comptroller and Global
@@ -566,8 +566,8 @@
           </div>
         </div>
         <div id="aboutRightText">
-          <p class="bulkText">
-            <img
+          <p class="bulkText">[Bio Pending]
+          <!--  <img
               id="picContainer"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/CGFSO365/MSimiskey.jpg"
             />Matt Simiskey is a career member of the Senior Foreign Service
@@ -599,11 +599,10 @@
             have four children: Olivia, Samantha, Sjon and Jacob. Matt enjoys
             gardening, doing home improvements, traveling, spending time with
             his family, and hopes to considerably improve his golf game while
-            living in Charleston.
+            living in Charleston.<br /><br />
+-->
 
-            <br /><br />
 
-            <!-- Ralph joined the Foreign Service in 1992. He received a Master’s degree International Business Studies from University of South Carolina and his undergraduate degree is in Mathematics from McPherson College in Kansas. He is married to Nancy Hamilton, and they have two children: Nina and Wesley.  -->
           </p>
         </div>
       </div>
