@@ -546,17 +546,17 @@
       <div id="midHR"></div>
       <div id="aboutRight">
         <div id="aboutRightTitle">
-          <div id="aboutRightName">Cecilia Coates</div>
+          <div id="aboutRightName">Vacant</div>
           <div id="aboutRightPosition">Deputy Comptroller (DC)</div>
           <div id="aboutRightDivision">
             Department of State<br />Bureau of the Comptroller and Global
             Financial Services
           </div>
-          <div id="aboutRightDuration">July 20 ,2021 - Present</div>
+       <!--   <div id="aboutRightDuration">July 20 ,2021 - Present</div>  -->
         </div>
         <div id="aboutRightText">
           <p class="bulkText">
-            <img
+      <!--      <img
               id="picContainer"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/CeCi-Coates.jpg"
             />
@@ -590,6 +590,9 @@
             Excellence Award 2016, the Innovate IT Award: 2018 Outstanding
             Civilian Leader of the Year and most recently 2020 SAMMIE finalist
             in the career achievement category.
+
+-->
+
           </p>
         </div>
       </div>
