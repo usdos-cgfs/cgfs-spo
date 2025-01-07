@@ -131,12 +131,13 @@
   <div id="midHR"></div>
   <div id="aboutRight">
   	 <div id="aboutRightTitle">
-	 <div id="aboutRightName">Joseph A. Kenny, Jr.</div>
-	 <div id="aboutRightPosition">Executive Director</div>
-	 <div id="aboutRightDivision">CGFS and BP</div>
+	 <div id="aboutRightName">Vacant</div>
+<!--	 <div id="aboutRightPosition">Executive Director</div>
+	 <div id="aboutRightDivision">CGFS and BP</div> -->
 	</div>
 	<div id="aboutRightText">
-	 <p class="bulkText"><img id="picContainer"src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/CGFSO365/JosephKenny5.jpg" align="left">A career member of the Senior Executive Service and formerly the Foreign Service, Joseph Kenny is the Executive Director of the Bureau of the Comptroller and Global Financial Services (CGFS) and the Bureau of Budget and Planning (BP). The Executive Office (an ISO 9001 certified organization) is the operational support organization for CGFS's global locations that include Bangkok, Paris, Sophia, Manila, and Charleston, SC, and BP. In this capacity, he oversees the day-to-day administration of the Bureaus, which includes strategic planning, budget formulation and execution, human resources, information technology, cybersecurity, administrative services, and procurement.<br/><br/>    
+	 <p class="bulkText">
+<!-- <img id="picContainer"src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/CGFSO365/JosephKenny5.jpg" align="left">A career member of the Senior Executive Service and formerly the Foreign Service, Joseph Kenny is the Executive Director of the Bureau of the Comptroller and Global Financial Services (CGFS) and the Bureau of Budget and Planning (BP). The Executive Office (an ISO 9001 certified organization) is the operational support organization for CGFS's global locations that include Bangkok, Paris, Sophia, Manila, and Charleston, SC, and BP. In this capacity, he oversees the day-to-day administration of the Bureaus, which includes strategic planning, budget formulation and execution, human resources, information technology, cybersecurity, administrative services, and procurement.<br/><br/>    
 
 In his earlier Foreign Service assignments, he served for three years each as the Executive Director of the Bureau of Global Medical Services as well as the Bureau of Economics, Energy, and Business Affairs (EB), where he was responsible for overall management of the Bureaus. In addition, he was the Special Assistant to both the DCFO and the Assistant Secretary and CFO, and he served on the faculty of the National Foreign Affairs Training Center (Foreign Service Institute) as the senior course coordinator and instructor for all Financial Management, Budgeting, ICASS, and related management classes.<br/><br/>    
 
@@ -150,7 +151,7 @@ Prior to the U.S. Department of State, Mr. Kenny worked for the U.S. Department 
 
 His undergraduate degrees are in Economics and Accounting Magna Cum Laude from The Catholic University of America.  He earned a Master of Business Administration in Finance and International Business from The George Washington University, and a Master of Science in National Security Strategy from the National War College, National Defense University, as well as a certificate in Leadership and Management from The Massachusetts Institute of Technology.  He has received several Superior Honor Awards and Meritorious Honor Awards. He is a Certified Financial Planner certificant (CFP®).<br/><br/>    
 
-	</p>
+-->	</p>
 	</div>
   </div>
  </div>
