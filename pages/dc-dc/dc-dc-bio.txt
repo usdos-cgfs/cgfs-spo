@@ -546,7 +546,7 @@
       <div id="midHR"></div>
       <div id="aboutRight">
         <div id="aboutRightTitle">
-          <div id="aboutRightName">Jeffrey D. Johson (Acting)</div>
+          <div id="aboutRightName">Jeffrey D. Johnson (Acting)</div>
           <div id="aboutRightPosition">Deputy Comptroller (DC)</div>
           <div id="aboutRightDivision">
             Department of State<br />Bureau of the Comptroller and Global
