@@ -1380,6 +1380,12 @@
           /></a>
         </div>
         <div class="quick-link">
+          <a title="e2 Solutions - Signle Sign On" href="https://account.activedirectory.windowsazure.com/applications/signin/a6fc7998-f2ee-48f5-a3d3-88dc7ab197a8?tenantId=66cf5074-5afe-48d1-a691-a12b2121f44b"
+            ><img
+              src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@main/assets/E2%20Button.png"
+          /></a>
+        </div>
+        <div class="quick-link">
           <a title="ICASS" href="/sites/CGFS-ICASS/"
             ><img
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/icass_pie.jpg"
