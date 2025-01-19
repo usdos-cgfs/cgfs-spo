@@ -1374,7 +1374,7 @@
           /></a>
         </div>
         <div class="quick-link">
-          <a title="e2 Solutions" href="http://e2.gov.cwtsatotravel.com/"
+          <a title="e2 Solutions" href="https://e2.prod.cwtsatotravel.com/"
             ><img
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/e2_new.jpg"
           /></a>
