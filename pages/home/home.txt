@@ -404,6 +404,7 @@
     width: 1366px;
     height: 275px;
     padding: 0px;
+    display: flex;
     /* margin-top: 30px */
   }
 
@@ -452,6 +453,9 @@
     float: left;
     width: 100%;
     padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #hotTopics {
@@ -727,6 +731,7 @@
       <p class="cButtonText">CONTINUING<br />EDUCATION</p>
     </div>
 
+<!--
     <div class="actButton" id="buttonArea6">
       <div id="button6">
         <a
@@ -744,7 +749,7 @@
         DIVERSITY, EQUITY, INCLUSION, AND ACCESSIBILITY (DEIA)
       </p>
     </div>
-
+-->
     <div class="actButton" id="buttonArea7">
       <div id="button7">
         <a
