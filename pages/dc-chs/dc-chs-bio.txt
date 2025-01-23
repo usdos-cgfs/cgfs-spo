@@ -494,14 +494,11 @@
     <div id="aboutContainer">
       <div id="aboutLeft">
         <div id="aboutLeftTitle">
-          Comptroller, Bureau of the Comptroller and Global Financial Services
-          (CGFS)
+          Principal Deputy Comptroller for Global Operations (CHS)
         </div>
         <div id="aboutLeftText">
           <p>
-            The Deputy Comptroller is the primary technical and policy advisor
-            to Comptroller on the Bureau's global financial operations. Offices
-            reporting directly to the DC/CHS include:<br /><br />
+            Offices reporting directly to the Principal DC (CHS) include:<br /><br />
           </p>
           <ul>
             <li>
