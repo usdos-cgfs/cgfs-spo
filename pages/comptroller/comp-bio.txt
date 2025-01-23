@@ -524,12 +524,14 @@
               <a href="/sites/CGFS/Pages/DC.aspx">DEPUTY COMPTROLLER (DC)</a>
             </li>
             <li>
-              <a href="/sites/CGFS/Pages/DCCharleston.aspx"
-                >DEPUTY COMPTROLLER (CHS)</a
+              <a target="_blank" href="/sites/CGFS/Pages/DCCharleston.aspx"
+                >PRINCIPAL DEPUTY COMPTROLLER (CHS)</a
               >
             </li>
             <li>
-              <a href="/sites/CGFS/Pages/AC.aspx">ASSOCIATE COMPTROLLER</a>
+              <a target="_blank" href="/sites/CGFS/Pages/AC.aspx"
+                >DEPUTY COMPTROLLER (CHS)</a
+              >
             </li>
           </ul>
         </div>
