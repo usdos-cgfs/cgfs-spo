@@ -749,7 +749,7 @@
         DIVERSITY, EQUITY, INCLUSION, AND ACCESSIBILITY (DEIA)
       </p>
     </div>
--->
+
     <div class="actButton" id="buttonArea7">
       <div id="button7">
         <a
@@ -765,7 +765,8 @@
       </div>
       <p class="cButtonText">CGFS & BP GREENING COUNCIL (CBGC)</p>
     </div>
-  </div>
+  </div>  
+-->
   <!--
   <div id="hotTopics">
     <div id="hotTopicsTitle">HOT TOPICS</div>
