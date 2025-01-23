@@ -764,9 +764,9 @@
         /></a>
       </div>
       <p class="cButtonText">CGFS & BP GREENING COUNCIL (CBGC)</p>
-    </div>
+    </div> -->
   </div>  
--->
+
   <!--
   <div id="hotTopics">
     <div id="hotTopicsTitle">HOT TOPICS</div>
