@@ -493,12 +493,11 @@
     <div id="aboutContainer">
       <div id="aboutLeft">
         <div id="aboutLeftTitle">
-          Associate Comptroller, Bureau of the Comptroller and Global Financial
-          Services (CGFS)
+          Deputy Comptroller for Customer Engagement (CHS)
         </div>
         <div id="aboutLeftText">
           <p>
-            Located in Charleston, South Carolina, the Associate Comptroller
+            <!-- Located in Charleston, South Carolina, the Associate Comptroller
             serves as the Managing Director for Global Disbursing, Customer
             Support and Training, and Post Support Unit operations. The
             Associate Comptroller is one of only two Minister Counselor
@@ -507,7 +506,8 @@
             The Associate Comptroller serves as the lead for the Bureau on the
             coordination of corporate Financial Management Officer (FMO) corps
             matters, pursuant to the Bureau's support of Sec. 902 of the Chief
-            Financial Officer's Act of 1990. Offices reporting to the Associate
+            Financial Officer's Act of 1990. -->
+            Offices reporting to the Deputy
             Comptroller include:<br /><br />
           </p>
           <ul>
@@ -542,12 +542,14 @@
               <a href="/sites/CGFS/Pages/DC.aspx">DEPUTY COMPTROLLER (DC)</a>
             </li>
             <li>
-              <a href="/sites/CGFS/Pages/DCCharleston.aspx"
-                >DEPUTY COMPTROLLER (CHS)</a
+              <a target="_blank" href="/sites/CGFS/Pages/DCCharleston.aspx"
+                >PRINCIPAL DEPUTY COMPTROLLER (CHS)</a
               >
             </li>
             <li>
-              <a href="/sites/CGFS/Pages/AC.aspx">ASSOCIATE COMPTROLLER</a>
+              <a target="_blank" href="/sites/CGFS/Pages/AC.aspx"
+                >DEPUTY COMPTROLLER (CHS)</a
+              >
             </li>
           </ul>
         </div>
@@ -556,7 +558,7 @@
       <div id="aboutRight">
         <div id="aboutRightTitle">
           <div id="aboutRightName">Susan Astley-Cass</div>
-          <div id="aboutRightPosition">Associate Comptroller</div>
+          <div id="aboutRightPosition">DEPUTY COMPTROLLER (CHS)</div>
           <div id="aboutRightDivision">
             Department of State<br />Bureau of the Comptroller and Global
             Financial Services
