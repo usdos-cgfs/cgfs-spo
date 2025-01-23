@@ -50,12 +50,12 @@
       }
 
       #bufferText {
-        font-size: 78px;
+        font-size: 65px;
         margin-left: 220px;
         color: #fff;
         font-family: Calibri Light, Candara, Segoe, "Segoe UI", Optima, Arial,
           sans-serif;
-        margin-top: 48px;
+        margin-top: 10px;
       }
 
       .ms-breadcrumb-top {
@@ -553,7 +553,7 @@
       <div id="aboutRight">
         <div id="aboutRightTitle">
           <div id="aboutRightName">William (Butch) Davisson</div>
-          <div id="aboutRightPosition">Principal Deputy Comptroller (Charleston)</div>
+          <div id="aboutRightPosition">Principal Deputy Comptroller (CHS)</div>
           <div id="aboutRightDivision">
             Department of State<br />Bureau of the Comptroller and Global Financial Services
           </div>
