@@ -480,7 +480,7 @@
 
       #picContainer {
         padding: 0px 15px 15px 0px;
-        width: 200px;
+        max-width: 240px;
         float: left;
         vertical-align: top;
       }
@@ -562,46 +562,15 @@
             Financial Services
           </div>
           <div id="aboutRightDuration">
-            <!-- SEPTEMBER 18, 2017 - PRESENT -->
+            NOVEMBER 2024 - PRESENT
           </div>
         </div>
         <div id="aboutRightText">
-          <p class="bulkText">[Bio Pending]
-          <!--  <img
+          <p class="bulkText">
+          <img
               id="picContainer"
-              src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/CGFSO365/MSimiskey.jpg"
-            />Matt Simiskey is a career member of the Senior Foreign Service
-            (SFS), currently serving as Associate Comptroller in the Bureau of
-            the Comptroller for Global Financial Services (CGFS) in Charleston,
-            South Carolina. He is responsible for Global Disbursing Operations,
-            Customer Support & Training, the Post Support Unit and CGFS overseas
-            financial operations in Paris, Sofia and Manila. <br /><br />
-
-            Previously Mr. Simiskey was the Managing Director of the Post
-            Support Unit and oversaw the rapid expansion of critical centralized
-            financial support to US Embassy’s around the globe. Matt has also
-            served as the Financial Management Officer in Cairo, Berlin, Baghdad
-            (twice), Rome, Moscow and N’djamena. He also served as the Project
-            Manager of CGFS’ Customer Support and Training Financial Software
-            Implementation Team and has supported system conversions in 52
-            countries. He is the recipient of the Department’s ICASS Outstanding
-            Leadership Award and the 2010 Chief Financial Officer’s Award for
-            Distinction in Public Finance Award, as well as multiple other
-            individual and group awards for his work. <br /><br />
-
-            Mr. Simiskey has nearly 20 years of government service, all with
-            Department of State. Prior to joining the Department of State, Matt
-            worked primarily in the healthcare financial management sector in
-            Houston, Texas. He also ran his own business for several years and
-            was the CFO of a start-up company in Utah. Matt studied Finance and
-            Accounting at Brigham Young University and served his church as a
-            missionary in Seoul, Korea. He is married to Andi Simiskey, and they
-            have four children: Olivia, Samantha, Sjon and Jacob. Matt enjoys
-            gardening, doing home improvements, traveling, spending time with
-            his family, and hopes to considerably improve his golf game while
-            living in Charleston.<br /><br />
--->
-
+              src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/assets/profiles/SusanAstley-Cass.png"
+            />Susan Astley-Cass is a member of the Senior Foreign Service, rank of Minister Counselor, currently serving as the Deputy Comptroller for Customer Engagement under the Bureau of the Comptroller and Global Financial Services (CGFS). The Deputy Comptroller for Customer Engagement oversees the CGFS Bureau’s support of overseas financial operations through its Bangkok Financial Service Center and its Post Support Unit operations in Charleston, Bangkok, Sofia, and Manila, as well as its Customer Support and Training operations in Charleston, FSTO Paris, and Bangkok.  The Deputy Comptroller for Customer Engagement also carries out the delegated authorities and responsibilities of the Comptroller regarding debt collections and the waiver of claims owed to the Department of State and spearheads CGFS “home bureau” advocacy of the FMO corps, career path development, retention, and engagement.  Previously, Susan served as a senior advisor in the Office of the Undersecretary for Management. Susan’s Foreign Service career spans over 25 years and includes postings across four regional bureaus and six overseas tours in Mexico, Canada, Afghanistan, China, and Nigeria. Her last assignment in CGFS was as a senior advisor to the Comptroller and as the Director of the Post Support Unit in the Bureau of the Comptroller & Global Financial Services, providing financial management support to posts around the world.   Ms. Astley-Cass holds a bachelor’s degree in accounting from American University, and a master’s degree in strategic studies from the U.S. Army War College.<br /><br />
 
           </p>
         </div>
