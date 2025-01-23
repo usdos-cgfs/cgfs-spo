@@ -518,7 +518,7 @@
             </li>
             <li>
               <a target="_blank" href="/sites/CGFS/GAO-Liaison/"
-                >Government Accountability Office Liason</a
+                >Government Accountability Office Liason (CGFS/GAO)</a
               >
             </li>
           </ul>
