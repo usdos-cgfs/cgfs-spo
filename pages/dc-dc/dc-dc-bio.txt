@@ -490,14 +490,15 @@
     <div id="aboutContainer">
       <div id="aboutLeft">
         <div id="aboutLeftTitle">
-          Deputy Comptroller for Financial, Audit, and Technology Management
+          Deputy Comptroller for Financial, Audit, and Technology Management (DC)
         </div>
         <div id="aboutLeftText">
           <p>
-            This Deputy Comptroller is the primary technical and policy advisor
+            <!-- This Deputy Comptroller is the primary technical and policy advisor
             to the Comptroller and Deputy Chief Financial Officer (DCFO) on
             matters related to financial policy, reporting, analysis and Global
-            Financial Management Systems. Offices reporting to this Deputy
+            Financial Management Systems. -->
+            Offices reporting to this Deputy
             Comptroller include:
           </p>
           <ul>
