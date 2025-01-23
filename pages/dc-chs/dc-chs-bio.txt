@@ -481,6 +481,7 @@
 
       #picContainer {
         padding: 0px 15px 15px 0px;
+        max-width: 240px;
         float: left;
         vertical-align: top;
       }
