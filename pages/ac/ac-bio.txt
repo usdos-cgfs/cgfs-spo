@@ -512,8 +512,8 @@
           </p>
           <ul>
             <li>
-              <a href="/sites/CGFS-GFS/Disbursing/"
-                >Global Disbursing (CGFS/DO)</a
+              <a href="/sites/CGFS-GFS/Bangkok/"
+                >Bangkok Service Center (CGFS/B)</a
               >
             </li>
             <li>
@@ -522,12 +522,12 @@
             <li>
               <a
                 href="/sites/CGFS-GFS/About%20GFS/VisitorInfo/Pages/FSTOInfo-spo.aspx"
-                >Financial Training and Support, Paris (CGFS/FSTO)</a
+                >Financial Support and Training Office, Paris (CGFS/FSTO)</a
               >
             </li>
             <li>
               <a href="/sites/CGFS-GFS/CST/"
-                >Customer Support Training (CGFS/CST)</a
+                >Customer Support and Training (CGFS/CST)</a
               >
             </li>
           </ul>
