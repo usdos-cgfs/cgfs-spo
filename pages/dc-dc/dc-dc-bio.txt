@@ -483,6 +483,7 @@
         padding: 0px 15px 15px 0px;
         float: left;
         vertical-align: top;
+        max-width: 240px;
       }
     </style>
 
@@ -562,7 +563,7 @@
           <p class="bulkText">
            <img
               id="picContainer"
-              src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/Images/CeCi-Coates.jpg"
+              src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/assets/profiles/JeffJohnson.jpg"
             />
             Jeffrey D. Johnson has had a distinguished career at the U.S. Department of State, marked by significant contributions in acquisitions, federal assistance, financial management, and enterprise risk management. Currently serving as the Acting Deputy Comptroller for Financial, Audit, and Technology Management, Mr. Johnson oversees the Department's financial policy, ensures robust financial audit and internal control processes, and manages the Department’s financial systems. He leads a team of financial analysts and policy experts to provide comprehensive financial oversight, strategic planning, and policy formulation as well as a team of technology experts in the planning, developing, coordinating, and implementing of financial management systems. Mr. Johnson drives compliance with federal financial regulations, enhances financial transparency, and supports data-driven decision-making processes at the Department.<br /><br />
 
