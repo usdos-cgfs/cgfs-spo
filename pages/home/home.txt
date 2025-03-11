@@ -1271,7 +1271,7 @@
                 <a
                   target="_blank"
                   title="FTR"
-                  href="https://www.gsa.gov/policy-regulations/regulations/federal-travel-regulation-ftr"
+                  href="https://www.ecfr.gov/current/title-41/subtitle-F"
                   >Federal Travel Regulations (FTR)</a
                 >
               </li>
@@ -1333,7 +1333,7 @@
                 <a
                   target="_blank"
                   title="Per Diem Rates"
-                  href="http://aoprals.a.state.gov/content.asp?content_id=207&menu_id=75"
+                  href="https://allowances.state.gov/web920/per_diem.asp"
                   >Per Diem Rates</a
                 >
               </li>
