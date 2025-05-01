@@ -131,9 +131,9 @@
   <div id="midHR"></div>
   <div id="aboutRight">
   	 <div id="aboutRightTitle">
-	 <div id="aboutRightName">Vacant</div>
-<!--	 <div id="aboutRightPosition">Executive Director</div>
-	 <div id="aboutRightDivision">CGFS and BP</div> -->
+	 <div id="aboutRightName">Heather M. Torres</div>
+	 <div id="aboutRightPosition">Executive Director (Acting)</div>
+	 <!--<div id="aboutRightDivision">CGFS and BP</div> -->
 	</div>
 	<div id="aboutRightText">
 	 <p class="bulkText">
