@@ -699,6 +699,21 @@
       <p class="cButtonText">RFMS/M ANNUAL CLOSE GUIDANCE</p>
     </div>
 
+  <div class="actButton" id="buttonArea3b">
+      <div id="button3b">
+        <a
+          title="GFMS Annual Close Guidance"
+          href="#"
+          ><img
+            alt="GFMS Annual Close Guidance"
+            src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png"
+            onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-hover.png'"
+            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png'"
+        /></a>
+      </div>
+      <p class="cButtonText">GFMS ANNUAL CLOSE GUIDANCE <br/> (Coming in August 2025)</p>
+    </div>
+
     <div class="actButton" id="buttonArea4">
       <div id="button4">
         <a
