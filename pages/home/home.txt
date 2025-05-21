@@ -1240,7 +1240,7 @@
                 <a
                   target="_blank"
                   title="WebGELS"
-                  href="https://webgels.cgfs.state.sbu/GELS/gels#/login"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/WebGELS/SitePages/Home.aspx"
                   >WebGELS</a
                 >
               </li>
