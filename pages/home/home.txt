@@ -664,7 +664,7 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/circleOne-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">SPS FORMS FOR VENDOR PAYMENT</p>
+      <p class="cButtonText">SPS FORMS FOR VENDOR PAYMENT<br><br></p>
     </div>
 
     <div class="actButton" id="buttonArea2">
@@ -696,7 +696,7 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">RFMS/M ANNUAL CLOSE GUIDANCE</p>
+      <p class="cButtonText">RFMS/M ANNUAL CLOSE GUIDANCE<br><br></p>
     </div>
 
   <div class="actButton" id="buttonArea3b">
@@ -727,7 +727,7 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">CGFS VISION &amp; FRONT OFFICE</p>
+      <p class="cButtonText">CGFS VISION &amp; FRONT OFFICE<br><br></p>
     </div>
 
     <div class="actButton" id="buttonArea5">
