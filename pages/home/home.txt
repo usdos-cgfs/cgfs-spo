@@ -743,7 +743,7 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/education-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">CONTINUING<br />EDUCATION</p>
+      <p class="cButtonText">CONTINUING<br />EDUCATION<br /><br /></p>
     </div>
 
 <!--
