@@ -949,7 +949,7 @@
                 <a
                   target="_blank"
                   title="ASK CGFS"
-                  href="http://kb.cgfs.state.sbu/"
+                  href="https://kb.cgfs.state.gov/"
                   >CGFS Knowledge Base (KB)</a
                 >
               </li>
