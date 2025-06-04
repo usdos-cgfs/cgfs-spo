@@ -1383,7 +1383,7 @@
       />
       <div class="slider-body">
         <div class="quick-link">
-          <a title="Ask CGFS" href="http://kb.cgfs.state.sbu/"
+          <a title="Ask CGFS" href="http://kb.cgfs.state.gov/"
             ><img
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/CGFS_book.jpg"
           /></a>
