@@ -1121,9 +1121,9 @@
               <li>
                 <a
                   target="_blank"
-                  title="SHIFTS"
+                  title="What is SHIFTS"
                   href="http://kb.cgfs.state.sbu/article.aspx?article=9805&p=25"
-                  >SHIFTS</a
+                  >What is SHIFTS</a
                 >
               </li>
               <li>
