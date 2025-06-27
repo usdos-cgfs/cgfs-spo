@@ -650,6 +650,22 @@
 
 <div id="middleContainer">
   <div id="buttonsArea">
+   <div class="actButton" id="buttonArea4">
+      <div id="button4">
+        <a
+          target="_blank"
+          title="Financial Management Reimagination"
+          href="#"
+          ><img
+            alt="Financial Management Reimagination"
+            src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png"
+            onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-hover.png'"
+            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png'"
+        /></a>
+      </div>
+      <p class="cButtonText">FINANCIAL MANAGEMENT REIMAGINATION<br><br></p>
+    </div> 
+
     <div class="actButton" id="buttonArea1">
       <div id="button1">
         <a
@@ -714,21 +730,6 @@
       <p class="cButtonText">GFMS ANNUAL CLOSE GUIDANCE <br/> (Coming in August 2025)</p>
     </div>
 
-    <div class="actButton" id="buttonArea4">
-      <div id="button4">
-        <a
-          target="_blank"
-          title="CGFS Vision & Front Office"
-          href="/sites/CGFS/FO/SitePages/CGFS-Vision.aspx"
-          ><img
-            alt="CGFS Vision & Front Office"
-            src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png"
-            onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-hover.png'"
-            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png'"
-        /></a>
-      </div>
-      <p class="cButtonText">CGFS VISION &amp; FRONT OFFICE<br><br></p>
-    </div>
 
     <div class="actButton" id="buttonArea5">
       <div id="button5">
@@ -1015,7 +1016,7 @@
       </div>
     </div>
 
-    <div class="cards" id="card3">
+    <!-- <div class="cards" id="card3">
       <div class="cardLabel">
         <div
           class="cardLabelText"
@@ -1053,7 +1054,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="cards" id="card4">
       <div class="cardLabel">
