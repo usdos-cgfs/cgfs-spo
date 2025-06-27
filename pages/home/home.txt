@@ -12,7 +12,7 @@
   }
 
   #s4-titlerow {
-    height: 332px !important;
+    height: 206px !important;
     padding: 0px;
   }
 
@@ -34,6 +34,7 @@
     text-align: center;
     position: relative;
     left: -4rem;
+    display: none !important;
   }
 
   #DosTextArea {
@@ -86,7 +87,7 @@
 
   #SearchBox {
     background: #ffffff;
-    margin-right: 10px;
+    margin-right: 9px;
   }
 
   ul.dynamic {
@@ -145,7 +146,7 @@
       no-repeat;
     width: 155px;
     margin: 20px;
-    height: 388px;
+    height: 160px;
     float: left;
   }
 
@@ -160,7 +161,7 @@
   }
 
   #maxCap {
-    float: left;
+    float: none !important;
     color: #fff;
     font-size: 40pt;
     font-family: Arial Black, Arial, sans-serif;
@@ -190,6 +191,7 @@
     text-align: justify;
     width: 757px;
     color: #fff;
+    display:none !important;
   }
 
   #aboutBG {
@@ -387,11 +389,11 @@
   }
 
   #s4-titlerow {
-    height: 332px;
+    height: 206px !important;
   }
 
   #contentRow {
-    padding-top: 85px !important;
+    padding-top: 0px !important;
   }
 
   #titleAreaBox {
@@ -1531,10 +1533,10 @@
   src="/sites/CGFS/Style%20Library/jquery.min.js"
 ></script>
 <script>
-  $("#topBanner")[0].style.height = "428px";
+  $("#topBanner")[0].style.height = "220px";
   $("#topContainer")[0].style.display = "none";
   $("#topContainer2")[0].style.display = "block";
-  $("#topBanner").height = "428px";
+  $("#topBanner").height = "220px";
   $("#topBanner")[0].style.background =
     "url('https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS-banner.png') no-repeat";
   $("#aboutBG").mouseenter(function () {
