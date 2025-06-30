@@ -1305,7 +1305,7 @@
                 <a
                   target="_blank"
                   title="CUG"
-                  href="/sites/CGFS-GFS/Disbursing/CashierMonitor/Policy%20Guidance%20%20Documents/Cashier%20User%20Guide%20version%202.0.pdf"
+                  href="https://kb.cgfs.state.gov/s/article/GFS-RD-CSH-007-Cashier-User-Guide-External-KB"
                   >Cashier User Guide (CUG)</a
                 >
               </li>
