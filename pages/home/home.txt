@@ -656,16 +656,16 @@
       <div id="button4">
         <a
           target="_blank"
-          title="Financial Management Reimagination"
+          title="Financial Management Reorganization"
           href="#"
           ><img
-            alt="Financial Management Reimagination"
+            alt="Financial Management Reorganization"
             src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png"
             onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-hover.png'"
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">FINANCIAL MANAGEMENT REIMAGINATION<br>(Coming Soon)</p>
+      <p class="cButtonText">FINANCIAL MANAGEMENT REORGANIZATION<br>(Coming Soon)</p>
     </div> 
 
     <div class="actButton" id="buttonArea1">
