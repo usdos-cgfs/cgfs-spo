@@ -876,14 +876,14 @@
         <div class="linkContainer">
           <div class="linkArea">
             <ul>
-              <li>
+              <!-- <li>
                 <a
                   target="_blank"
                   title="CGFS Contact List"
                   href="https://usdos.sharepoint.com/sites/CGFS/SitePages/CGFSOrgChart.aspx"
                   >CGFS Contact List</a
                 >
-              </li>
+              </li>  -->
               <li>
                 <a
                   target="_blank"
