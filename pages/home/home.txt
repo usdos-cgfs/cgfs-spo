@@ -657,7 +657,7 @@
         <a
           target="_blank"
           title="Financial Management Reorganization"
-          href="#"
+          href="https://usdos.sharepoint.com/sites/CGFS/Financial-Management-Reorg/"
           ><img
             alt="Financial Management Reorganization"
             src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png"
@@ -665,7 +665,7 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">FINANCIAL MANAGEMENT REORGANIZATION<br>(Coming Soon)</p>
+      <p class="cButtonText">FINANCIAL MANAGEMENT REORGANIZATION</p>
     </div> 
 
     <div class="actButton" id="buttonArea1">
