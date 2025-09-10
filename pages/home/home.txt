@@ -721,7 +721,7 @@
       <div id="button3b">
         <a
           title="GFMS Annual Close Guidance"
-          href="#"
+          href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/SiteAssets/SitePages/GFOHome(1)/2362731444AC-FY25-Announcement.pdf?web=1"
           ><img
             alt="GFMS Annual Close Guidance"
             src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png"
@@ -729,7 +729,7 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">GFMS ANNUAL CLOSE GUIDANCE <br/> (Coming in August 2025)</p>
+      <p class="cButtonText">GFMS ANNUAL CLOSE GUIDANCE</p>
     </div>
 
 
