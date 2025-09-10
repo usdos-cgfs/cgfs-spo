@@ -665,7 +665,7 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">FINANCIAL MANAGEMENT REORGANIZATION</p>
+      <p class="cButtonText">FINANCIAL MANAGEMENT REORGANIZATION<br><br></p>
     </div> 
 
     <div class="actButton" id="buttonArea1">
@@ -729,7 +729,7 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">GFMS ANNUAL CLOSE GUIDANCE</p>
+      <p class="cButtonText">GFMS ANNUAL CLOSE GUIDANCE<br><br></p>
     </div>
 
 
