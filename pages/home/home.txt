@@ -1335,7 +1335,7 @@
                 <a
                   target="_blank"
                   title="Exchange Rates"
-                  href="https://ice.cgfs.state.sbu/"
+                  href="https://cgfsice.azurewebsites.us/"
                   >Exchange Rates</a
                 >
               </li>
