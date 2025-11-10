@@ -1235,7 +1235,7 @@
                 <a
                   target="_blank"
                   title="Pay Calendars"
-                  href="/sites/CGFS-GFS/GC/GCPC/"
+                  href="/sites/CGFS-GFS/Compensation/GlobalCompensationPlanningCalendar/"
                   >Pay Calendars</a
                 >
               </li>
