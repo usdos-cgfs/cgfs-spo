@@ -595,6 +595,14 @@
     padding-left: 5px;
   }
 
+  .new-ribbon::after {
+    content: 'new';
+    color: white;
+    background: green;
+    border-radius: 4px;
+    padding: 0px 6px;
+  }
+
   /* Start Quick Apps Slider Update - Peter Backlund 2023/07/28 */
 
   .slider-container {
@@ -1193,6 +1201,15 @@
               </li>
               <li>
                 <a
+                  class="new-ribbon"
+                  target="_blank"
+                  title="GovTA Knowledge Center"
+                  href="https://usdos.sharepoint.com/sites/CGFS/GovTA/"
+                  >GovTA Knowledge Center</a
+                >
+              </li>
+              <li>
+                <a
                   target="_blank"
                   title="HR Specialist/Payroll Liasons"
                   href="/sites/CGFS-GFS/Compensation/AMPAY/GFACSAME/SitePages/Launch-Home.aspx"
@@ -1247,6 +1264,7 @@
                   >WebGELS</a
                 >
               </li>
+
             </ul>
           </div>
         </div>
