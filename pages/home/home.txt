@@ -601,6 +601,7 @@
     background: green;
     border-radius: 4px;
     padding: 0px 6px;
+    margin-left: 6px;
   }
 
   /* Start Quick Apps Slider Update - Peter Backlund 2023/07/28 */
