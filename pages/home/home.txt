@@ -683,7 +683,7 @@
       href="https://gtmprod.servicenowservices.com/cgfs"
     >
       <img
-        src="../../assets/engage-cgfs-logo-horizontal-navy.png"
+        src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@main/assets/engage-cgfs-logo-horizontal-navy.png"
         alt="CGFS Engage Url"
       />
     </a>
