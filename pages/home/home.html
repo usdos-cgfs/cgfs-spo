@@ -191,7 +191,7 @@
     text-align: justify;
     width: 757px;
     color: #fff;
-    display:none !important;
+    display: none !important;
   }
 
   #aboutBG {
@@ -596,12 +596,27 @@
   }
 
   .new-ribbon::after {
-    content: 'new';
+    content: "new";
     color: white;
     background: green;
     border-radius: 4px;
     padding: 0px 6px;
     margin-left: 6px;
+  }
+
+  .banner-container {
+    width: 1366px;
+
+    & .banner {
+      display: flex;
+      justify-content: center;
+      height: 6rem;
+      margin-bottom: 1rem;
+
+      & img {
+        height: 100%;
+      }
+    }
   }
 
   /* Start Quick Apps Slider Update - Peter Backlund 2023/07/28 */
@@ -659,9 +674,24 @@
   }
 </style>
 
+<div class="banner-container">
+  <div class="banner">
+    <a
+      title="Engage CGFS Customer Portal"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://gtmprod.servicenowservices.com/cgfs"
+    >
+      <img
+        src="../../assets/engage-cgfs-logo-horizontal-navy.png"
+        alt="CGFS Engage Url"
+      />
+    </a>
+  </div>
+</div>
 <div id="middleContainer">
   <div id="buttonsArea">
-   <div class="actButton" id="buttonArea4">
+    <div class="actButton" id="buttonArea4">
       <div id="button4">
         <a
           target="_blank"
@@ -674,8 +704,8 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">FINANCIAL MANAGEMENT REORGANIZATION<br><br></p>
-    </div> 
+      <p class="cButtonText">FINANCIAL MANAGEMENT REORGANIZATION<br /><br /></p>
+    </div>
 
     <div class="actButton" id="buttonArea1">
       <div id="button1">
@@ -691,7 +721,7 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/circleOne-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">SPS FORMS FOR VENDOR PAYMENT<br><br></p>
+      <p class="cButtonText">SPS FORMS FOR VENDOR PAYMENT<br /><br /></p>
     </div>
 
     <div class="actButton" id="buttonArea2">
@@ -723,10 +753,10 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">RFMS/M ANNUAL CLOSE GUIDANCE<br><br></p>
+      <p class="cButtonText">RFMS/M ANNUAL CLOSE GUIDANCE<br /><br /></p>
     </div>
 
-  <div class="actButton" id="buttonArea3b">
+    <div class="actButton" id="buttonArea3b">
       <div id="button3b">
         <a
           title="GFMS Annual Close Guidance"
@@ -738,9 +768,8 @@
             onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png'"
         /></a>
       </div>
-      <p class="cButtonText">GFMS ANNUAL CLOSE GUIDANCE<br><br></p>
+      <p class="cButtonText">GFMS ANNUAL CLOSE GUIDANCE<br /><br /></p>
     </div>
-
 
     <div class="actButton" id="buttonArea5">
       <div id="button5">
@@ -758,7 +787,7 @@
       <p class="cButtonText">CONTINUING<br />EDUCATION<br /><br /></p>
     </div>
 
-<!--
+    <!--
     <div class="actButton" id="buttonArea6">
       <div id="button6">
         <a
@@ -792,7 +821,7 @@
       </div>
       <p class="cButtonText">CGFS & BP GREENING COUNCIL (CBGC)</p>
     </div> -->
-  </div>  
+  </div>
 
   <!--
   <div id="hotTopics">
@@ -958,6 +987,16 @@
           <div class="linkArea">
             <ul>
               <li>
+                <!-- link added 2026-01-05 -->
+                <a
+                  class="new-ribbon"
+                  target="_blank"
+                  title="Engage CGFS SharePoint Page"
+                  href="https://gtmprod.servicenowservices.com/cgfs"
+                  >Engage CGFS SharePoint Page</a
+                >
+              </li>
+              <li>
                 <a
                   target="_blank"
                   title="ASK CGFS"
@@ -971,14 +1010,6 @@
                   title="CGFS Training Center of Excellence"
                   href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/CGFSTrainingCOE/SitePages/CGFSTraining_COE.aspx"
                   >CGFS Training Center of Excellence</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  title="Support/Help Desk"
-                  href="https://usdos.sharepoint.com/sites/CGFS/Pages/SupportDesks-SPO.aspx"
-                  >Support/Help Desk</a
                 >
               </li>
               <li>
@@ -1265,7 +1296,6 @@
                   >WebGELS</a
                 >
               </li>
-
             </ul>
           </div>
         </div>
@@ -1423,7 +1453,9 @@
           /></a>
         </div>
         <div class="quick-link">
-          <a title="e2 Solutions - Signle Sign On" href="https://account.activedirectory.windowsazure.com/applications/signin/a6fc7998-f2ee-48f5-a3d3-88dc7ab197a8?tenantId=66cf5074-5afe-48d1-a691-a12b2121f44b"
+          <a
+            title="e2 Solutions - Signle Sign On"
+            href="https://account.activedirectory.windowsazure.com/applications/signin/a6fc7998-f2ee-48f5-a3d3-88dc7ab197a8?tenantId=66cf5074-5afe-48d1-a691-a12b2121f44b"
             ><img
               src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@main/assets/E2%20Button.png"
           /></a>
