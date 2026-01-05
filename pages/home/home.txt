@@ -991,9 +991,9 @@
                 <a
                   class="new-ribbon"
                   target="_blank"
-                  title="Engage CGFS SharePoint Page"
+                  title="Engage CGFS Customer Portal"
                   href="https://gtmprod.servicenowservices.com/cgfs"
-                  >Engage CGFS SharePoint Page</a
+                  >Engage CGFS Customer Portal</a
                 >
               </li>
               <li>
