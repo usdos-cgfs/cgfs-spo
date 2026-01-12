@@ -1136,14 +1136,6 @@
               <li>
                 <a
                   target="_blank"
-                  title="Web.Rabit"
-                  href="https://rabit.cgfs.state.sbu/"
-                  >Web.Rabit</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
                   title="ICASS GDB"
                   href="http://10.12.11.9/webpass/"
                   >ICASS GDB("Java Launch")</a
@@ -1500,12 +1492,6 @@
           <a title="Exchange Rates" href="https://cgfsice.azurewebsites.us/"
             ><img
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/exchange_rates.jpg"
-          /></a>
-        </div>
-        <div class="quick-link">
-          <a title="Web.Rabit" href="https://rabit.cgfs.state.sbu/"
-            ><img
-              src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/web_rabit_new.jpg"
           /></a>
         </div>
         <div class="quick-link">
