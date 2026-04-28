@@ -1128,14 +1128,6 @@
               <li>
                 <a
                   target="_blank"
-                  title="CRMS - BRMS, BSS, IAS"
-                  href="/sites/CGFS/Pages/CRMS-BRMS-SPO.aspx"
-                  >CRMS - BRMS, BSS, IAS</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
                   title="ICASS GDB"
                   href="http://10.12.11.9/webpass/"
                   >ICASS GDB("Java Launch")</a
