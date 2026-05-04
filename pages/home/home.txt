@@ -1359,9 +1359,9 @@
               <li>
                 <a
                   target="_blank"
-                  title="e2 Support (Overseas)"
-                  href="/sites/CGFs-GFS/CST/GeT/Pages/GeTODocs.aspx"
-                  >e2 Support (Overseas)</a
+                  title="e2 Support (Overseas and Domestic)"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/GeT/SitePages/E2-SharePoint.aspx"
+                  >e2 Support (Overseas and Domestic)</a
                 >
               </li>
               <li>
@@ -1438,8 +1438,8 @@
         </div>
         <div class="quick-link">
           <a
-            title="e2 Solutions - Signle Sign On"
-            href="https://account.activedirectory.windowsazure.com/applications/signin/a6fc7998-f2ee-48f5-a3d3-88dc7ab197a8?tenantId=66cf5074-5afe-48d1-a691-a12b2121f44b"
+            title="e2 Solutions - Single Sign On"
+            href="https://state.okta.com/home/state_cgfse2solutionstravel_1/0oa1296wa7fk9oJ5x298/aln129706fpXKDPxt298"
             ><img
               src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@main/assets/E2%20Button.png"
           /></a>
