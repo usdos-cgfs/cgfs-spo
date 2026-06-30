@@ -1046,7 +1046,7 @@
               <li>
                 <a
                   target="_blank"
-                  title="ASK CGFS"
+                  title="CGFS Knowledge Base"
                   href="https://kb.cgfs.state.gov/"
                   >CGFS Knowledge Base (KB)</a
                 >
@@ -1466,9 +1466,9 @@
       />
       <div class="slider-body">
         <div class="quick-link">
-          <a title="Ask CGFS" href="http://kb.cgfs.state.gov/"
+          <a title="CGFS Knowledge Base" href="http://kb.cgfs.state.gov/"
             ><img
-              src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/CGFS_book.jpg"
+              src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@main/assets/CGFS_KB.jpg"
           /></a>
         </div>
         <div class="quick-link">
