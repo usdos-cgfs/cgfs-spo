@@ -675,6 +675,21 @@
     max-width: 100%;
   }
 
+.quick-link a {
+    position: relative;
+}
+
+.quick-link a span.link-text {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 10px;
+    font-family: sans-serif;
+    line-height: .9;
+}
+
 .stars-above:before {
     background: url(https://usdos.sharepoint.com/sites/CGFS/SiteAssets/icon/star.svg) 0 0 repeat;
     content: "";
@@ -1469,7 +1484,7 @@
           <a title="CGFS Knowledge Base" href="http://kb.cgfs.state.gov/"
             ><img
               src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/assets/CGFS_KB.jpg"
-          /></a>
+          /><span class="link-text">CGFS Knowledge Base</span></a>
         </div>
         <div class="quick-link">
           <a title="myPay" href="https://gtmprod.servicenowservices.com/mypay"
