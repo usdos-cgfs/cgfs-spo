@@ -712,7 +712,7 @@
       href="https://gtmprod.servicenowservices.com/cgfs"
     >
       <img
-        src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@main/assets/engage-cgfs-logo-horizontal-navy.png"
+        src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/assets/engage-cgfs-logo-horizontal-navy.png"
         alt="CGFS Engage Url"
       />
     </a>
@@ -1468,7 +1468,7 @@
         <div class="quick-link">
           <a title="CGFS Knowledge Base" href="http://kb.cgfs.state.gov/"
             ><img
-              src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@main/assets/CGFS_KB.jpg"
+              src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/assets/CGFS_KB.jpg"
           /></a>
         </div>
         <div class="quick-link">
@@ -1488,7 +1488,7 @@
             title="e2 Solutions - Single Sign On"
             href="https://state.okta.com/home/state_cgfse2solutionstravel_1/0oa1296wa7fk9oJ5x298/aln129706fpXKDPxt298"
             ><img
-              src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@main/assets/E2%20Button.png"
+              src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/assets/E2%20Button.png"
           /></a>
         </div>
         <div class="quick-link">
