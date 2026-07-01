@@ -688,6 +688,7 @@
     font-size: 10px;
     font-family: sans-serif;
     line-height: .9;
+    color: black;
 }
 
 .stars-above:before {
