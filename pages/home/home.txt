@@ -392,7 +392,7 @@
     width: 100%;
     max-width: 665px;
     background: #fff;
-    margin-left: 0;
+    margin-left: 620px;
   }
 
   .footerLinks ul {
@@ -534,7 +534,7 @@
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    color: #fff;
+    color: #fff !important;
     font-family: Arial;
     font-weight: bold;
     font-size: 1rem;
