@@ -1,9 +1,24 @@
 <style>
+  /* ===== Accessibility utility classes (NEW) ===== */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  /* ===== Base layout (FIX #7: fluid widths instead of fixed px) ===== */
   #contentBox,
   #s4-bodyContainer {
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 1366px !important;
+    width: 100% !important;
+    max-width: 1366px;
     min-height: 400px;
   }
 
@@ -12,18 +27,21 @@
   }
 
   #s4-titlerow {
-    height: 206px !important;
+    height: auto !important;
     padding: 0px;
   }
 
   #topBanner {
-    width: 1366px;
+    width: 100%;
+    max-width: 1366px;
     background: url("https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/CGFS-bannerSmall.png");
+    background-size: cover;
     height: 287px;
   }
 
   #topContainer {
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
   }
 
   #headerVisionStatement {
@@ -43,8 +61,7 @@
     margin-left: 220px;
     color: #fff;
     font-size: 21px;
-    font-family: Calibri Light, Candara, Segoe, "Segoe UI", Optima, Arial,
-      sans-serif;
+    font-family: Calibri Light, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     letter-spacing: 2px;
   }
 
@@ -59,8 +76,7 @@
     font-size: 78px;
     margin-left: 220px;
     color: #fff;
-    font-family: Calibri Light, Candara, Segoe, "Segoe UI", Optima, Arial,
-      sans-serif;
+    font-family: Calibri Light, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     margin-top: 48px;
   }
 
@@ -93,19 +109,21 @@
   ul.dynamic {
     background-color: #236a9f;
     width: auto !important;
-    white-space: nowrap !important;
+    white-space: normal !important;
+    /* FIX #7: allow wrap instead of forcing nowrap */
   }
+
   .menu-horizontal .menu-item-text {
     color: #ffffff;
   }
 
-  .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+  .ms-core-listMenu-horizontalBox li.static>.ms-core-listMenu-item {
     padding: 5px 10px;
     color: #fff;
     background: #236a9f;
   }
 
-  .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item:hover {
+  .ms-core-listMenu-horizontalBox li.static>.ms-core-listMenu-item:hover {
     background: #ffc02a;
     color: #236a9f !important;
   }
@@ -119,9 +137,11 @@
   .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link {
     color: #005696 !important;
   }
+
   .ms-core-listMenu-horizontalBox li a {
     color: #ffffff !important;
   }
+
   .headerText2 {
     color: #fff;
     font-size: 19pt;
@@ -137,13 +157,13 @@
   }
 
   #topContainer2 {
-    width: 900px;
-    height: 428px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
   }
 
   #sealDiv {
-    background: url("https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/DOSSeal.png")
-      no-repeat;
+    background: url("https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/DOSSeal.png") no-repeat;
     width: 155px;
     margin: 20px;
     height: 160px;
@@ -155,8 +175,7 @@
     padding-top: 20px;
     color: #fff;
     font-size: 25pt;
-    font-family: Calibri Light, Candara, Segoe, "Segoe UI", Optima, Arial,
-      sans-serif;
+    font-family: Calibri Light, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     letter-spacing: 4px;
   }
 
@@ -189,14 +208,16 @@
     font-family: Calibri, Arial, SANS-SERIF;
     font-size: 17px;
     text-align: justify;
-    width: 757px;
+    width: 100%;
+    max-width: 757px;
     color: #fff;
     display: none !important;
   }
 
   #aboutBG {
     background: url("https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/About-overlay.png");
-    width: 575px;
+    width: 100%;
+    max-width: 575px;
     height: 65px;
     font-size: 20px;
     font-family: ARIAL NARROW, SANS-SERIF;
@@ -223,7 +244,8 @@
 
   #aboutOverlay {
     background: url("https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/about us drop.png");
-    width: 575px;
+    width: 100%;
+    max-width: 575px;
     height: 158px;
     margin-left: 180px;
     display: none;
@@ -280,13 +302,12 @@
   }
 
   .ms-webpart-chrome-title {
-    background: url("https://usdos.sharepoint.com/sites/CGFS/SiteAssets/Icon/location_bar_on.png")
-      no-repeat !important;
+    background: url("https://usdos.sharepoint.com/sites/CGFS/SiteAssets/Icon/location_bar_on.png") no-repeat !important;
     height: 44px !important;
   }
 
   .ms-webpart-titleText.ms-webpart-titleText,
-  .ms-webpart-titleText > a {
+  .ms-webpart-titleText>a {
     color: #fff !important;
     font-family: Arial !important;
     margin-top: 13px !important;
@@ -296,22 +317,25 @@
   }
 
   #footer-CGFS {
-    width: 1366px;
-    height: 236px;
+    width: 100%;
+    max-width: 1366px;
+    height: auto;
+    min-height: 236px;
     background: url("https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/footer.png");
+    background-size: cover;
   }
 
   #footerSeal {
     width: 77px;
     height: 77px;
-    background: url("https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/footer seal.png")
-      no-repeat;
+    background: url("https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/footer seal.png") no-repeat;
     float: left;
     overflow: hidden;
   }
 
   #footerLeft {
-    width: 530px;
+    width: 100%;
+    max-width: 530px;
     float: left;
     margin-top: 60px;
     margin-left: 50px;
@@ -334,8 +358,9 @@
   }
 
   #footerRight {
-    width: 1366px;
-    height: 220px;
+    width: 100%;
+    max-width: 1366px;
+    height: auto;
     padding-top: 16px;
   }
 
@@ -344,6 +369,7 @@
     font-size: 18pt;
     font-family: Calibri, Arial;
   }
+
   #footerQLContainer {
     overflow: hidden;
     padding-top: 25px;
@@ -360,104 +386,86 @@
     font-weight: bold;
     font-style: italic;
   }
+
   #footerQLHR {
     height: 2px;
-    width: 665px;
+    width: 100%;
+    max-width: 665px;
     background: #fff;
-    margin-left: 620px;
+    margin-left: 0;
   }
 
   .footerLinks ul {
     list-style-type: none;
     line-height: 20px;
   }
+
   .footerLinks ul li a {
     color: #fff;
     font-family: Calibri Regular, Arial;
     text-decoration: none;
   }
+
   .footerLinks {
     float: left;
     font-family: Calibri Regular, Arial, Helvetica, sans-serif;
     font-size: 14px;
   }
 
-  /*  MiddleContainer  */
-
+  /* MiddleContainer (FIX #4 + #7: list-based nav, fluid width) */
   #DeltaPlaceHolderMain table table {
     padding: 0px !important;
   }
 
-  #s4-titlerow {
-    height: 206px !important;
-  }
-
-  #contentRow {
-    padding-top: 0px !important;
-  }
-
-  #titleAreaBox {
-    margin: 0px;
-    margin-top: 0px !important;
-  }
-
   #middleContainer {
     background-color: #2e2e2e;
-    width: 1366px;
-    height: 275px;
+    width: 100%;
+    max-width: 1366px;
+    height: auto;
+    min-height: 275px;
     padding: 0px;
     display: flex;
-    /* margin-top: 30px */
+    flex-wrap: wrap;
+  }
+
+  .buttonsArea-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0 0;
+    width: 100%;
   }
 
   .actButton {
-    float: left;
-    width: 100%;
     text-align: center;
     font-family: Calibri, Arial;
     margin-left: 14px;
     margin-right: 14px;
-  }
-  #button1,
-  #button2,
-  #button3,
-  #button4,
-  #button5,
-  #button6,
-  #button7 {
-    width: 155px;
-    height: 155px;
-    margin: auto;
+    margin-bottom: 20px;
   }
 
   #button1 img,
   #button2 img,
   #button3 img,
+  #button3b img,
   #button4 img,
-  #button5 img,
-  #button6 img,
-  #button7 img {
+  #button5 img {
     width: 155px;
+    max-width: 100%;
+    height: auto;
     -webkit-transition: opacity 0.25s ease-in-out;
     -moz-transition: opacity 0.25s ease-in-out;
     -o-transition: opacity 0.251s ease-in-out;
     transition: opacity 0.25s ease-in-out;
   }
 
-  #button1 img.top:hover,
-  #button2 img.top:hover,
-  #button3 img.top:hover,
-  #button4 img.top:hover {
-    opacity: 0;
-  }
-
-  #buttonsArea {
-    float: left;
-    width: 100%;
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .buttonImgWrap {
+    width: 155px;
+    height: 155px;
+    margin: auto;
   }
 
   #hotTopics {
@@ -475,6 +483,7 @@
     padding-left: 35px;
     line-height: 35px;
   }
+
   a.rssLink {
     color: #fff;
     font-family: Calibri, Arial;
@@ -495,27 +504,32 @@
     color: #fff;
   }
 
+  /* Card stack (FIX #7: fluid widths, wrap) */
   #cardStack {
-    width: 1092px !important;
-    height: 890px;
-    float: left;
+    width: 100% !important;
+    max-width: 1092px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .cards {
-    float: left;
+    flex: 1 1 300px;
     margin-right: 10px;
     margin-left: 10px;
-    display: table;
-    width: 342px;
+    margin-bottom: 20px;
+    max-width: 342px;
   }
 
   .cardLabel {
     background: url("https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/box title.png");
-    width: 342px;
+    background-size: cover;
+    width: 100%;
     height: 50px;
     display: table;
     vertical-align: middle;
   }
+
   .cardLabelText {
     display: table-cell;
     vertical-align: middle;
@@ -523,16 +537,15 @@
     color: #fff;
     font-family: Arial;
     font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
   }
 
   .cardShadow {
-    background: linear-gradient(
-      to bottom,
-      rgba(230, 230, 230, 0.52),
-      rgba(252, 252, 252, 0.73)
-    );
-    width: 342px;
-    height: 215px;
+    background: linear-gradient(to bottom, rgba(230, 230, 230, 0.52), rgba(252, 252, 252, 0.73));
+    width: 100%;
+    height: auto;
+    min-height: 215px;
   }
 
   .linkArea ul {
@@ -563,9 +576,6 @@
   .linkArea li:hover {
     list-style-type: none;
     background: rgba(137, 157, 175, 0.4);
-  }
-
-  .linkArea li:hover {
     padding-left: 5px;
   }
 
@@ -580,15 +590,12 @@
     width: 50%;
   }
 
-  .linkAreaSplit2 {
-    margin-left: 50%px;
-  }
-
   .cButtonText {
     font-size: 11pt;
     font-weight: bold;
     letter-spacing: 2px;
     font-family: Calibri Light;
+    color: #fff;
   }
 
   #buttonArea1 {
@@ -605,39 +612,45 @@
   }
 
   .banner-container {
-    width: 1366px;
-
-    & .banner {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 1rem;
-      flex-direction: column;
-      align-items: center;
-      gap: .5rem;
-
-      & img {
-        height: 100px;
-      }
-    }
+    width: 100%;
+    max-width: 1366px;
   }
 
-  /* Start Quick Apps Slider Update - Peter Backlund 2023/07/28 */
+  .banner-container .banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
+  .banner-container .banner img {
+    height: 100px;
+    max-width: 100%;
+  }
+
+  /* Quick Apps Slider (FIX #5: accessible disclosure) */
   .slider-container {
-    background-image: url("/sites/CGFS/Style%20Library/images/cgfso365/quickapps/accordionclosedbody.png");
+    background-image: url("https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/accordionclosedbody.png");
     background-repeat: repeat-y;
     height: fit-content;
     overflow: hidden;
+    flex: none;
   }
 
   .open-slider {
     position: absolute;
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
   }
 
   .slider {
     position: relative;
     width: 268px;
+    max-width: 100%;
     left: -100%;
     transition: left 1s ease-out;
   }
@@ -651,18 +664,30 @@
     right: 0;
     margin-right: 12px;
     text-align: right;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
   }
 
-  .slider > img {
+  .slider>img {
     display: block;
+    max-width: 100%;
   }
 
   .slider .slider-body {
-    background-image: url("/sites/CGFS/Style%20Library/images/cgfso365/quickapps/accordionbody.png");
+    background-image: url("https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/accordionbody.png");
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 0px 40px 20px 50px;
+  }
+
+  .slider-head-text {
+    color: #fff;
+    padding: 10px 0 0 20px;
+    font-size: 1.1rem;
+    margin: 0;
   }
 
   .slider .quick-link {
@@ -675,11 +700,11 @@
     max-width: 100%;
   }
 
-.quick-link a {
+  .quick-link a {
     position: relative;
-}
+  }
 
-.quick-link a span.link-text {
+  .quick-link a span.link-text {
     position: absolute;
     top: -16px;
     left: 50%;
@@ -687,17 +712,16 @@
     text-align: center;
     font-size: 10px;
     font-family: sans-serif;
-    line-height: .9;
+    line-height: 0.9;
     color: black;
-}
+  }
 
-.stars-above:before {
+  .stars-above:before {
     background: url(https://usdos.sharepoint.com/sites/CGFS/SiteAssets/icon/star.svg) 0 0 repeat;
     content: "";
     display: block;
     font-size: 12px;
     height: 18px;
-    /* left: 50%; */
     line-height: 1;
     max-width: 53px;
     position: absolute;
@@ -705,9 +729,9 @@
     width: 53px;
     left: 50%;
     transform: translateX(-50%);
-}
+  }
 
-.stars-above:after {
+  .stars-above:after {
     background: #c1a783;
     bottom: 0;
     content: "";
@@ -716,322 +740,201 @@
     position: absolute;
     transform: translateX(-50%);
     width: 100px;
-}
+  }
+  
+  /* utilities */
+  .flex {
+    display: flex;
+  }
+
+  /* Reflow safety net (FIX #7) */
+  @media (max-width: 1366px) {
+
+    #DosTextArea,
+    #bufferText,
+    .headerText2 {
+      margin-left: 20px;
+      font-size: 1.5rem;
+    }
+
+    #middleContainer,
+    #cardStack,
+    #topBanner,
+    #topContainer2 {
+      width: 100% !important;
+    }
+
+    #cardStack {
+      max-width: calc(100vw - 268px);
+    }
+  }
 </style>
 
 <div class="banner-container">
   <div class="banner">
-    <a
-      title="Engage CGFS Customer Portal"
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://gtmprod.servicenowservices.com/cgfs"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/assets/engage-cgfs-logo-horizontal-navy.png"
-        alt="CGFS Engage Url"
-      />
+    <a title="Engage CGFS Customer Portal" target="_blank" rel="noopener noreferrer"
+      href="https://gtmprod.servicenowservices.com/cgfs">
+      <img src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/assets/engage-cgfs-logo-horizontal-navy.png"
+        alt="Engage CGFS Customer Portal" />
+      <span class="visually-hidden">(opens in a new tab)</span>
     </a>
-    <div class="stars-above" style="
-    color: black;
-    padding: 22px 0 16px 0;
-    position: relative;
-    text-align: center;
-">
-        <h4 style="
-    font-weight: bold;
-    font-size: x-large;
-    color: #d01319;
-    text-transform: capitalize;
-">Website updates in progress</h4>
-        <p style="
-    color: black;
-    font-size: large;
-    font-weight: bolder;
-">We are updating our site to reflect our recent organizational changes. Thank you for your patience as we make these improvements.</p>
+    <div class="stars-above" style="color: black; padding: 22px 0 16px 0; position: relative; text-align: center;">
+      <!-- FIX #1: semantic heading for visual section alert -->
+      <h2 style="font-weight: bold; font-size: x-large; color: #d01319; text-transform: capitalize; margin: 0;">
+        Website updates in progress
+      </h2>
+      <p style="color: black; font-size: large; font-weight: bolder;">
+        We are updating our site to reflect our recent organizational changes. Thank you for your patience as we make
+        these improvements.
+      </p>
     </div>
   </div>
 </div>
+
 <div id="middleContainer">
-  <div id="buttonsArea">
-    <div class="actButton" id="buttonArea4">
-      <div id="button4">
-        <a
-          target="_blank"
-          title="Financial Management Reorganization"
-          href="https://usdos.sharepoint.com/sites/CGFS/Financial-Management-Reorg/"
-          ><img
-            alt="Financial Management Reorganization"
+  <!-- FIX #4: buttonsArea converted to a semantic list -->
+  <ul id="buttonsArea" class="buttonsArea-list">
+    <li class="actButton" id="buttonArea4">
+      <div class="buttonImgWrap" id="button4">
+        <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS/Financial-ManagementReorg/">
+          <!-- FIX #3: removed redundant title attribute (duplicated alt text) -->
+          <img alt="Financial Management Reorganization"
             src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png"
             onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-hover.png'"
-            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png'"
-        /></a>
+            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS Vision-normal.png'" />
+          <span class="visually-hidden">(opens in a new tab)</span>
+        </a>
       </div>
-      <p class="cButtonText">FINANCIAL MANAGEMENT REORGANIZATION<br /><br /></p>
-    </div>
+      <p class="cButtonText">Financial Management Reorganization</p>
+    </li>
 
-    <div class="actButton" id="buttonArea1">
-      <div id="button1">
-        <a
-          target="_blank"
-          title="SPS Forms for Vendor Payment"
-          href="/sites/CGFS-GFS/GFO/Claims/"
-        >
-          <img
-            alt="SPS forms for vendor payment"
+    <li class="actButton" id="buttonArea1">
+      <div class="buttonImgWrap" id="button1">
+        <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/Claims/">
+          <img alt="SPS forms for vendor payment"
             src="https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/circleOne-normal.png"
             onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleone-hover.png'"
-            onmouseout="this.src='https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/circleOne-normal.png'"
-        /></a>
+            onmouseout="this.src='https://usdos.sharepoint.com/sites/cgfs/style%20library/images/cgfso365/circleOne-normal.png'" />
+          <span class="visually-hidden">(opens in a new tab)</span>
+        </a>
       </div>
-      <p class="cButtonText">SPS FORMS FOR VENDOR PAYMENT<br /><br /></p>
-    </div>
+      <p class="cButtonText">SPS Forms for Vendor Payment</p>
+    </li>
 
-    <div class="actButton" id="buttonArea2">
-      <div id="button2">
-        <a
-          target="_blank"
-          title="Domestic Financial Operating Instructions (DFOI)"
-          href="/sites/CGFS-GFS/GFO/DFOI"
-          ><img
-            alt="DOMESTIC FINANCIAL OPERATING INSTRUCTIONS (DFOI)"
+    <li class="actButton" id="buttonArea2">
+      <div class="buttonImgWrap" id="button2">
+        <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/DFOI">
+          <img alt="Domestic Financial Operating Instructions (DFOI)"
             src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleTwo-normal.png"
             onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleTwo-hover.png'"
-            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleTwo-normal.png'"
-        /></a>
+            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleTwo-normal.png'" />
+          <span class="visually-hidden">(opens in a new tab)</span>
+        </a>
       </div>
-      <p class="cButtonText">DOMESTIC FINANCIAL OPERATING INSTRUCTIONS</p>
-    </div>
+      <p class="cButtonText">Domestic Financial Operating Instructions</p>
+    </li>
 
-    <div class="actButton" id="buttonArea3">
-      <div id="button3">
-        <a
-          target="_blank"
-          title="RFMS/M Annual Close Guidance"
-          href="/sites/CGFS-GFS/GFO/RFMSMACG"
-          ><img
-            alt="RFMS/M Annual Close Guidance"
+    <li class="actButton" id="buttonArea3">
+      <div class="buttonImgWrap" id="button3">
+        <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/RFMSMACG">
+          <img alt="RFMS/M Annual Close Guidance"
             src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png"
             onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-hover.png'"
-            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png'"
-        /></a>
+            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png'" />
+          <span class="visually-hidden">(opens in a new tab)</span>
+        </a>
       </div>
-      <p class="cButtonText">RFMS/M ANNUAL CLOSE GUIDANCE<br /><br /></p>
-    </div>
+      <p class="cButtonText">RFMS/M Annual Close Guidance</p>
+    </li>
 
-    <div class="actButton" id="buttonArea3b">
-      <div id="button3b">
-        <a
-          title="GFMS Annual Close Guidance"
-          href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/SiteAssets/SitePages/GFOHome(1)/AC-FY25-Announcement.pdf?web=1"
-          ><img
-            alt="GFMS Annual Close Guidance"
+    <li class="actButton" id="buttonArea3b">
+      <div class="buttonImgWrap" id="button3b">
+        <a target="_blank"
+          href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/SiteAssets/SitePages/GFOHome(1)/AC-FY25-Announcement.pdf?web=1">
+          <img alt="GFMS Annual Close Guidance"
             src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png"
             onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-hover.png'"
-            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png'"
-        /></a>
+            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleThree-normal.png'" />
+          <span class="visually-hidden">(opens in a new tab, PDF)</span>
+        </a>
       </div>
-      <p class="cButtonText">GFMS ANNUAL CLOSE GUIDANCE<br /><br /></p>
-    </div>
+      <p class="cButtonText">GFMS Annual Close Guidance</p>
+    </li>
 
-    <div class="actButton" id="buttonArea5">
-      <div id="button5">
-        <a
-          target="_blank"
-          title="CGFS Continuing Education - CGFS Staff Only"
-          href="/sites/CGFS/CE/"
-          ><img
-            alt="CGFS CONTINUING EDUCATION - CGFS STAFF ONLY"
+    <li class="actButton" id="buttonArea5">
+      <div class="buttonImgWrap" id="button5">
+        <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS/CE/">
+          <img alt="CGFS Continuing Education - CGFS Staff Only"
             src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/education-normal.png"
             onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/education-hover.png'"
-            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/education-normal.png'"
-        /></a>
+            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/education-normal.png'" />
+          <span class="visually-hidden">(opens in a new tab)</span>
+        </a>
       </div>
-      <p class="cButtonText">CONTINUING<br />EDUCATION<br /><br /></p>
-    </div>
-
+      <p class="cButtonText">Continuing Education</p>
+    </li>
     <!--
-    <div class="actButton" id="buttonArea6">
-      <div id="button6">
-        <a
-          target="_blank"
-          title="Diversity, Equity, Inclusions, and Accessibility (DEIA)"
-          href="/sites/CGFS/DEIA/"
-          ><img
-            alt="Diversity, Equity, Inclusions, and Accessibility (DEIA)"
-            src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleSix-normal.png"
-            onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleSix-hover.png'"
-            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleSix-normal.png'"
-        /></a>
-      </div>
-      <p class="cButtonText">
-        DIVERSITY, EQUITY, INCLUSION, AND ACCESSIBILITY (DEIA)
-      </p>
-    </div>
-
-    <div class="actButton" id="buttonArea7">
-      <div id="button7">
-        <a
-          target="_blank"
-          title="CGFS and BP Greening Council (CBGC)"
-          href="/sites/CGFS/CBGC/"
-          ><img
-            alt="CGFS and BP Greening Council (CBGC)"
-            src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleSeven-normal.png"
-            onmouseover="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleSeven-hover.png'"
-            onmouseout="this.src='https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/circleSeven-normal.png'"
-        /></a>
-      </div>
-      <p class="cButtonText">CGFS & BP GREENING COUNCIL (CBGC)</p>
-    </div> -->
-  </div>
+    DEIA and CBGC buttons intentionally left commented out, matching source.
+    If re-enabled, apply the same list-item, alt/title, and new-tab-label pattern used above.
+    -->
+  </ul>
 
   <!--
-  <div id="hotTopics">
-    <div id="hotTopicsTitle">HOT TOPICS</div>
-    <div class="rss" id="rss3">
-      <a
-        target="_blank"
-        class="rssLink"
-        title="CGFS Continuing Education"
-        href="https://usdos.sharepoint.com/sites/CGFS/CE/"
-        ><img
-          src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/rssicon.png"
-          align="left"
-        />CONTINUING EDUCATION</a
-      >
-    </div>
-    <div class="rss" id="rss1">
-      <a
-        target="_blank"
-        class="rssLink"
-        title="GFMS Allotment Spending Control"
-        href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/DAA/SitePages/DAAHome.aspx?OR=Teams-HL&CT=1647020947560#helpful-forms"
-        ><img
-          src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/rssicon.png"
-          align="left"
-        />GFMS ALLOTMENT SPENDING</a
-      >
-    </div>
-    <div class="rss" id="rss3">
-      <a
-        target="_blank"
-        class="rssLink"
-        title="REMOTE READINESS"
-        href="https://usdos.sharepoint.com/sites/CGFS-GFS/CGFSApps"
-        ><img
-          src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/rssicon.png"
-          align="left"
-        />REMOTE READINESS</a
-      >
-    </div>
-    <div class="rss" id="rss3">
-      <a
-        target="_blank"
-        class="rssLink"
-        title="GAO UPDATES"
-        href="https://www.gao.gov/about/contact-us/stay-connected/"
-        ><img
-          src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/rssicon.png"
-          align="left"
-        />GAO UPDATES</a
-      >
-    </div>
-    <div class="rss" id="rss1">
-      <a
-        target="_blank"
-        class="rssLink"
-        title="OMB UPDATES"
-        href="https://www.whitehouse.gov/omb/information-for-agencies/circulars/"
-        ><img
-          src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/rssicon.png"
-          align="left"
-        />OMB UPDATES</a
-      >
-    </div>
-    <div class="rss" id="rss2">
-      <a
-        target="_blank"
-        class="rssLink"
-        title="TREASURY UPDATES"
-        href="https://home.treasury.gov/news/press-releases"
-        ><img
-          src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/rssicon.png"
-          align="left"
-        />TREASURY UPDATES</a
-      >
-    </div>
-  </div>
+  Hot Topics block intentionally left commented out, matching source.
   -->
 </div>
 
 <br />
 
-<div style="/*display: flex*/">
+<div class="flex">
   <div id="cardStack">
+    <!-- CONTACTS -->
     <div class="cards" id="card1">
       <div class="cardLabel">
-        <div class="cardLabelText" title="Section: Contacts">CONTACTS</div>
+        <h2 class="cardLabelText">Contacts</h2>
       </div>
       <div class="cardShadow">
         <div class="linkContainer">
           <div class="linkArea">
             <ul>
-              <!-- <li>
-                <a
-                  target="_blank"
-                  title="CGFS Contact List"
-                  href="https://usdos.sharepoint.com/sites/CGFS/SitePages/CGFSOrgChart.aspx"
-                  >CGFS Contact List</a
-                >
-              </li>  -->
               <li>
-                <a
-                  target="_blank"
-                  title="CGFS Visitor Contacts/Information"
-                  href="/sites/CGFS/Pages/visitors.aspx"
-                  >CGFS Visitor Contacts/Information</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS/Pages/visitors.aspx">
+                  CGFS Visitor Contacts/Information
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Certifying Officer List"
-                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Download/CGFS%20Certifying%20Officer%20List/COCUR-Current_Certifying_Officer_Report.PDF"
-                  >Certifying Officer List</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Download/CGFS%20Certifying%20Officer%20List/COCUR-Current_Certifying_Officer_Report.PDF">
+                  Certifying Officer List
+                  <span class="visually-hidden">(opens in a new tab, PDF)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Post Financial Management POCs/Overseas Accountants"
-                  href="/sites/CGFS-GFS/GFO/sitePages/Posts-Points-of-Contact.aspx"
-                  >Post Financial Management POCs/Overseas Accountants</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/sitePages/Posts-Points-ofContact.aspx">
+                  Post Financial Management POCs/Overseas Accountants
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Domestic Accountants"
-                  href="/sites/CGFS-GFS/GFO/DAA/SitePages/DAAHome.aspx"
-                  >Domestic Accountants</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/DAA/SitePages/DAAHome.aspx">
+                  Domestic Accountants
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Annual Financial Audit &amp; Management Controls"
-                  href="/sites/CGFS/Pages/CGFS-Website/Annual-Fin-Audit.aspx"
-                  >Annual Financial Audit &amp; Management Controls</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS/Pages/CGFS-Website/Annual-Fin-Audit.aspx">
+                  Annual Financial Audit &amp; Management Controls
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="JMB Financial Management Working Group"
-                  href="/sites/CGFs-gfs/jmb/"
-                  >JMB Financial Management Working Group</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-gfs/jmb/">
+                  JMB Financial Management Working Group
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -1039,11 +942,10 @@
       </div>
     </div>
 
+    <!-- CUSTOMER SUPPORT -->
     <div class="cards" id="card2">
       <div class="cardLabel">
-        <div class="cardLabelText" title="Section: Customer Support">
-          CUSTOMER SUPPORT
-        </div>
+        <h2 class="cardLabelText">Customer Support</h2>
       </div>
       <div class="cardShadow">
         <div class="linkContainer">
@@ -1051,69 +953,54 @@
             <ul>
               <li>
                 <!-- link added 2026-01-05 -->
-                <a
-                  class="new-ribbon"
-                  target="_blank"
-                  title="Engage CGFS Customer Portal"
-                  href="https://gtmprod.servicenowservices.com/cgfs"
-                  >Engage CGFS Customer Portal</a
-                >
+                <a class="new-ribbon" target="_blank" href="https://gtmprod.servicenowservices.com/cgfs">
+                  Engage CGFS Customer Portal
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="CGFS Knowledge Base"
-                  href="https://kb.cgfs.state.gov/"
-                  >CGFS Knowledge Base (KB)</a
-                >
+                <a target="_blank" href="https://kb.cgfs.state.gov/">
+                  CGFS Knowledge Base (KB)
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="CGFS Training Center of Excellence"
-                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/CGFSTrainingCOE/SitePages/CGFSTraining_COE.aspx"
-                  >CGFS Training Center of Excellence</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/CGFSTrainingCOE/SitePages/CGFSTraining_COE.aspx">
+                  CGFS Training Center of Excellence
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="GFMS & GBI Communication/Updates"
-                  href="/sites/CGFS-dcfo/org/GFSS/SupportedSystems/"
-                  >GFMS & GBI Communication/Updates</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-dcfo/org/GFSS/SupportedSystems/">
+                  GFMS &amp; GBI Communication/Updates
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Overseas Broadcast Notices"
-                  href="/sites/CGFS-GFS/CST/Broadcast/"
-                  >Overseas Broadcast Notices</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Broadcast/">
+                  Overseas Broadcast Notices
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Global Financial Training Program"
-                  href="/sites/CGFS-GFS/CST/Pages/GFSTraining.aspx"
-                  >Global Financial Training Program</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Pages/GFSTraining.aspx">
+                  Global Financial Training Program
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Grants Info"
-                  href="/sites/CGFS-dcfo/org/FPRA/FAFM/"
-                  >Grants Info</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-dcfo/org/FPRA/FAFM/">
+                  Grants Info
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="CGFS Customer Survey Results"
-                  href="/sites/CGFS/Pages/CGFS-Website/CGFS_survey-results-SPO.aspx"
-                  >CGFS Customer Survey Results</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS/Pages/CGFS-Website/CGFS_survey-resultsSPO.aspx">
+                  CGFS Customer Survey Results
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -1121,140 +1008,86 @@
       </div>
     </div>
 
-    <!-- <div class="cards" id="card3">
-      <div class="cardLabel">
-        <div
-          class="cardLabelText"
-          title="Section: Financial Management Services"
-        >
-          FINANCIAL MANAGEMENT SERVICES
-        </div>
-      </div>
-      <div class="cardShadow">
-        <div class="linkContainer">
-          <div class="linkArea">
-            <ul>
-              <li>
-                <a
-                  target="_blank"
-                  href="/sites/CGFS/Pages/CGFS-Website/FSFMS-SPO.aspx"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="/sites/CGFS/FSM%20Documents/All_current_2101_positions_(filled_or_vacant)%2028%20MAR%202024%20(1).pdf"
-                  >Positions</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="/sites/CGFS/FSM%20Documents/Promotion%20History%20Stats.xlsx"
-                  >Promotion Statistics</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    <!--
+    FINANCIAL MANAGEMENT SERVICES card intentionally left commented out, matching source.
+    -->
 
+    <!-- FINANCIAL RESOURCE SYSTEMS -->
     <div class="cards" id="card4">
       <div class="cardLabel">
-        <div class="cardLabelText" title="Section: Financial Resource Systems">
-          FINANCIAL RESOURCE SYSTEMS
-        </div>
+        <h2 class="cardLabelText">Financial Resource Systems</h2>
       </div>
       <div class="cardShadow">
         <div class="linkContainer">
           <div class="linkArea linkAreaSplit1">
             <ul>
               <li>
-                <a
-                  target="_blank"
-                  title="GFMS Global Business Intelligence"
-                  href="https://gbi.cgfs.state.sbu"
-                  >Global Business Intelligence</a
-                >
+                <a target="_blank" href="https://gbi.cgfs.state.sbu">
+                  Global Business Intelligence
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="RFMS/M Support"
-                  href="
-    https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/PAA/Pages/RFMS_Update_Guidance.aspx"
-                  >RFMS/M Support</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/PAA/Pages/RFMS_Update_Guidance.aspx">
+                  RFMS/M Support
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="ICASS GDB"
-                  href="http://10.12.11.9/webpass/"
-                  >ICASS GDB("Java Launch")</a
-                >
+                <a target="_blank" href="http://10.12.11.9/webpass/">
+                  ICASS GDB ("Java Launch")
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="IBIS"
-                  href="/sites/CGFS-dcfo/org/GFSS/SupportedSystems/Pages/IBIS.aspx"
-                  >IBIS</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-dcfo/org/GFSS/SupportedSystems/Pages/IBIS.aspx">
+                  IBIS
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
             </ul>
           </div>
           <div class="linkArea linkAreaSplit2">
             <ul>
               <li>
-                <a
-                  target="_blank"
-                  title="SHIFTS"
-                  href="https://kb.cgfs.state.gov/s/article/CGFS-Knowledge-Base-9805"
-                  >SHIFTS</a
-                >
+                <a target="_blank" href="https://kb.cgfs.state.gov/s/article/CGFS-KnowledgeBase-9805">
+                  SHIFTS
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Software and Documentation Downloads"
-                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Download/"
-                  >Software &amp; Documentation Downloads</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Download/">
+                  Software &amp; Documentation Downloads
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="ISSO/Access"
-                  href="/sites/CGFS-GFS/ISSO/"
-                  >ISSO/Access</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/ISSO/">
+                  ISSO/Access
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="System Business Hours"
-                  href="/sites/CGFS-GFS/Operations/Pages/BusinessHoursforFinancialSystems.aspx"
-                  >System Business Hours</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/Operations/Pages/BusinessHoursforFinancialSystems.aspx">
+                  System Business Hours
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="RFMS/C Support"
-                  href="/sites/CGFS-GFS/CST/RFMSC/SitePages/TrainingHome.aspx"
-                  >RFMS/C Support</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/RFMSC/SitePages/TrainingHome.aspx">
+                  RFMS/C Support
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="myPay"
-                  href="https://gtmprod.servicenowservices.com/mypay"
-                  >myPay</a
-                >
+                <a target="_blank" href="https://gtmprod.servicenowservices.com/mypay">
+                  myPay
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -1262,86 +1095,71 @@
       </div>
     </div>
 
+    <!-- PAY -->
     <div class="cards" id="card5">
       <div class="cardLabel">
-        <div class="cardLabelText" title="Section: Pay">PAY</div>
+        <h2 class="cardLabelText">Pay</h2>
       </div>
       <div class="cardShadow">
         <div class="linkContainer">
           <div class="linkArea">
             <ul>
               <li>
-                <a
-                  target="_blank"
-                  title="American Employees"
-                  href="/sites/CGFS-GFS/GC/PP/SitePages/AMPay.aspx"
-                  >American Employees</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/GC/PP/SitePages/AMPay.aspx">
+                  American Employees
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  class="new-ribbon"
-                  target="_blank"
-                  title="GovTA Knowledge Center"
-                  href="https://usdos.sharepoint.com/sites/CGFS/GovTA/"
-                  >GovTA Knowledge Center</a
-                >
+                <a class="new-ribbon" target="_blank" href="https://usdos.sharepoint.com/sites/CGFS/GovTA/">
+                  GovTA Knowledge Center
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="HR Specialist/Payroll Liasons"
-                  href="/sites/CGFS-GFS/Compensation/AMPAY/GFACSAME/SitePages/Launch-Home.aspx"
-                  >HR Specialist/Payroll Liasons</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/Compensation/AMPAY/GFACSAME/SitePages/Launch-Home.aspx">
+                  HR Specialist/Payroll Liaisons
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Locally Employed (LE) Staff"
-                  href="/sites/CGFS-GFS/GC/PP/SitePages/LEPay.aspx"
-                  >Locally Employed (LE) Staff (CHS)</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/GC/PP/SitePages/LEPay.aspx">
+                  Locally Employed (LE) Staff (CHS)
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Locally Employed (LE) Staff"
-                  href="/sites/CGFS-GFS/Bangkok/GFSBPAY"
-                  >Locally Employed (LE) Staff (BKK)</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/Bangkok/GFSBPAY">
+                  Locally Employed (LE) Staff (BKK)
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Timekeepers"
-                  href="/sites/CGFS-GFS/Compensation/AMPAY/GFACSAME/SitePages/Launch-Home.aspx"
-                  >Timekeepers</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/Compensation/AMPAY/GFACSAME/SitePages/Launch-Home.aspx">
+                  Timekeepers
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Retirees"
-                  href="/sites/CGFS-GFS/GC/PP/SitePages/Ann.aspx"
-                  >Retirees</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/GC/PP/SitePages/Ann.aspx">
+                  Retirees
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Pay Calendars"
-                  href="/sites/CGFS-GFS/Compensation/GlobalCompensationPlanningCalendar/"
-                  >Pay Calendars</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/Compensation/GlobalCompensationPlanningCalendar/">
+                  Pay Calendars
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="WebGELS"
-                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/WebGELS/SitePages/Home.aspx"
-                  >WebGELS</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/WebGELS/SitePages/Home.aspx">
+                  WebGELS
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -1349,61 +1167,52 @@
       </div>
     </div>
 
+    <!-- POLICY AND REGULATIONS -->
     <div class="cards" id="card6">
-      <div class="cardLabel" title="Section: Policy and Regulations">
-        <div class="cardLabelText">POLICY AND REGULATIONS</div>
+      <div class="cardLabel">
+        <h2 class="cardLabelText">Policy and Regulations</h2>
       </div>
       <div class="cardShadow">
         <div class="linkContainer">
           <div class="linkArea">
             <ul>
               <li>
-                <a
-                  target="_blank"
-                  title="Appropriation Law"
-                  href="https://www.gao.gov/legal/appropriations-law-decisions/training"
-                  >Appropriation Law</a
-                >
+                <a target="_blank" href="https://www.gao.gov/legal/appropriations-law-decisions/training">
+                  Appropriation Law
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="DSSR"
-                  href="http://aoprals.state.gov/content.asp?content_id=282&menu_id=86"
-                  >Department of State Standardized Regulations (DSSR)</a
-                >
+                <a target="_blank" href="http://aoprals.state.gov/content.asp?content_id=282&menu_id=86">
+                  Department of State Standardized Regulations (DSSR)
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="4 FAM/FAH"
-                  href="https://usdos.sharepoint.com/sites/A-GIS/dir/fam/Pages/04FAM/04FAM.aspx"
-                  >4 FAM/FAH</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/A-GIS/dir/fam/Pages/04FAM/04FAM.aspx">
+                  4 FAM/FAH
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="FTR"
-                  href="https://www.ecfr.gov/current/title-41/subtitle-F"
-                  >Federal Travel Regulations (FTR)</a
-                >
+                <a target="_blank" href="https://www.ecfr.gov/current/title-41/subtitle-F">
+                  Federal Travel Regulations (FTR)
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="OMB Circulars, Memos, Bulletins"
-                  href="https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/M-17-26.pdf"
-                  >OMB Circulars, Memos, Bulletins</a
-                >
+                <a target="_blank"
+                  href="https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/M-17-26.pdf">
+                  OMB Circulars, Memos, Bulletins
+                  <span class="visually-hidden">(opens in a new tab, PDF)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="CUG"
-                  href="https://kb.cgfs.state.gov/s/article/GFS-RD-CSH-007-Cashier-User-Guide-External-KB"
-                  >Cashier User Guide (CUG)</a
-                >
+                <a target="_blank"
+                  href="https://kb.cgfs.state.gov/s/article/GFS-RD-CSH-007-Cashier-User-Guide-External-KB">
+                  Cashier User Guide (CUG)
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -1411,53 +1220,46 @@
       </div>
     </div>
 
+    <!-- TRAVEL -->
     <div class="cards" id="card7">
       <div class="cardLabel">
-        <div class="cardLabelText" title="Section: Travel">TRAVEL</div>
+        <h2 class="cardLabelText">Travel</h2>
       </div>
       <div class="cardShadow">
         <div class="linkContainer">
           <div class="linkArea">
             <ul>
               <li>
-                <a
-                  target="_blank"
-                  title="e2 Support (Overseas and Domestic)"
-                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/GeT/SitePages/E2-SharePoint.aspx"
-                  >e2 Support (Overseas and Domestic)</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/GeT/SitePages/E2-SharePoint.aspx">
+                  e2 Support (Overseas and Domestic)
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Exchange Rates"
-                  href="https://cgfsice.azurewebsites.us/"
-                  >Exchange Rates</a
-                >
+                <a target="_blank" href="https://cgfsice.azurewebsites.us/">
+                  Exchange Rates
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="PCS Travel Claim System Support"
-                  href="/sites/CGFS-GFS/CST/PCS_Travel/Pages/GFSPCSTravel.aspx"
-                  >PCS Travel Claim System Support</a
-                >
+                <a target="_blank"
+                  href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/PCS_Travel/Pages/GFSPCSTravel.aspx">
+                  PCS Travel Claim System Support
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Per Diem Rates"
-                  href="https://allowances.state.gov/web920/per_diem.asp"
-                  >Per Diem Rates</a
-                >
+                <a target="_blank" href="https://allowances.state.gov/web920/per_diem.asp">
+                  Per Diem Rates
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  title="Travel Card Program"
-                  href="/sites/CGFS-GFS/GFO/TCP/"
-                  >Travel Card Program</a
-                >
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/TCP/">
+                  Travel Card Program
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -1466,36 +1268,42 @@
     </div>
   </div>
 
+  <!-- FIX #5 & #6: accessible Quick Apps disclosure with heading -->
   <div class="slider-container" title="QuickApps Slider">
-    <img
-      id="openSlider"
-      src="/sites/CGFS/Style%20Library/images/cgfso365/quickapps/accordionclosedheader.png"
-      alt=""
-      class="open-slider"
-    />
-    <div id="slider" class="slider">
-      <div id="closeSlider" class="close-slider"><a href="#">CLOSE</a></div>
+    <button id="openSlider" type="button" class="open-slider" aria-expanded="false" aria-controls="slider">
       <img
-        class="slider-head"
-        src="/sites/CGFS/Style%20Library/images/cgfso365/quickapps/accordionheader.png"
-        alt=""
-      />
+        src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/accordionclosedheader.png"
+        alt="" />
+      <span class="visually-hidden">Toggle Quick Links panel</span>
+    </button>
+
+    <div id="slider" class="slider" hidden>
+      <button id="closeSlider" type="button" class="close-slider">
+        Close
+        <span class="visually-hidden">Quick Links panel</span>
+      </button>
+      <img class="slider-head"
+        src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/accordionheader.png"
+        alt="" />
+      <!-- FIX #6: "Quick Links" as a real heading -->
+      
+      <h2 class="visually-hidden">Quick Links</h2>
       <div class="slider-body">
         <div class="quick-link">
           <a title="CGFS Knowledge Base" href="http://kb.cgfs.state.gov/"
-            ><img
+            ><img alt="CGFS Knowledge Base"
               src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/assets/CGFS_KB.jpg"
           /><span class="link-text">CGFS Knowledge Base</span></a>
         </div>
         <div class="quick-link">
           <a title="myPay" href="https://gtmprod.servicenowservices.com/mypay"
-            ><img
+            ><img alt="myPay Portal"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/btn_myPay.jpg"
           /></a>
         </div>
         <div class="quick-link">
           <a title="e2 Solutions" href="https://e2.prod.cwtsatotravel.com/"
-            ><img
+            ><img alt="e2 Solutions"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/e2_new.jpg"
           /></a>
         </div>
@@ -1503,49 +1311,49 @@
           <a
             title="e2 Solutions - Single Sign On"
             href="https://state.okta.com/home/state_cgfse2solutionstravel_1/0oa1296wa7fk9oJ5x298/aln129706fpXKDPxt298"
-            ><img
+            ><img alt="e2 Solutions - Single Sign On"
               src="https://cdn.jsdelivr.net/gh/usdos-cgfs/cgfs-spo@latest/assets/E2%20Button.png"
           /></a>
         </div>
         <div class="quick-link">
           <a title="ICASS" href="/sites/CGFS-ICASS/"
-            ><img
+            ><img alt="ICASS Portal"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/icass_pie.jpg"
           /></a>
         </div>
         <div class="quick-link">
           <a title="GFMS" href="https://gfms.cgfs.state.sbu/"
-            ><img
+            ><img alt="GFMS"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/button_GFMS.jpg"
           /></a>
         </div>
         <div class="quick-link">
           <a title="PSU" href="/sites/CGFS-GFS/PSU/"
-            ><img
+            ><img alt="PSU"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/PSU_purple.jpg"
           /></a>
         </div>
         <div class="quick-link">
           <a title="RFMS" href="https://rfms.cgfs.state.sbu/"
-            ><img
+            ><img alt="RFMS"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/rfms.jpg"
           /></a>
         </div>
         <div class="quick-link">
           <a title="IBIS" href="https://ibis.cgfs.state.sbu/"
-            ><img
+            ><img alt="IBIS"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/IBIS.png"
           /></a>
         </div>
         <div class="quick-link">
           <a title="Global BI" href="https://gbi.cgfs.state.sbu/BOE/BI"
-            ><img
+            ><img alt="Global BI"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/GBIButton.png"
           /></a>
         </div>
         <div class="quick-link">
           <a title="Exchange Rates" href="https://cgfsice.azurewebsites.us/"
-            ><img
+            ><img alt="Exchange Rates"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/exchange_rates.jpg"
           /></a>
         </div>
@@ -1553,7 +1361,7 @@
           <a
             title="FSN Relief Fund"
             href="https://edcs.cgfsdc.state.sbu/Pages/FSN.aspx"
-            ><img
+            ><img alt="FSN Relief Fund"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/FSN_Fund.jpg"
           /></a>
         </div>
@@ -1561,15 +1369,15 @@
           <a
             title="Pay Calendar"
             href="/sites/CGFS-GFS/Compensation/GlobalCompensationPlanningCalendar/"
-            ><img
+            ><img alt="Pay Calendar"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/paycalendar.png"
           /></a>
         </div>
         <div class="quick-link">
           <a
             title="Post Evacuations"
-            href="https://medcs.ses.state.sbu/Pages/PostEvacuations.aspx"
-            ><img
+            href="https://usdos.sharepoint.com/sites/CGFS-EDCS-Intranet/SitePages/Post-Evacuations.aspx"
+            ><img alt="Post Evacuations"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/post_evac_red.jpg"
           /></a>
         </div>
@@ -1577,7 +1385,7 @@
           <a
             title="Access Requests"
             href="/sites/CGFS-GFS/ISSO/Lists/FAQ%20%20Charleston/"
-            ><img
+            ><img alt="Access Requests"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/access_request_gray.jpg"
           /></a>
         </div>
@@ -1585,13 +1393,13 @@
           <a
             title="EDCS Website"
             href="https://www.state.gov/bureaus-offices/under-secretary-for-management/bureau-of-the-comptroller-and-global-financial-services/office-of-emergencies-in-the-diplomatic-and-consular-service/"
-            ><img
+            ><img alt="EDCS Website"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/EDCSButton.png"
           /></a>
         </div>
         <div class="quick-link">
           <a title="RFMS" href="https://rfmsc.cgfs.state.sbu/cash/login"
-            ><img
+            ><img alt="RFMS"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/rfms-c.jpg"
           /></a>
         </div>
@@ -1599,7 +1407,7 @@
           <a
             title="Payroll Customer Support Portal"
             href="https://seirmprod.servicenowservices.com/cgfs"
-            ><img
+            ><img alt="Payroll Customer Support Portal"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/pcsportal.png"
           /></a>
         </div>
@@ -1607,54 +1415,80 @@
           <a
             title="WebGels"
             href="https://webgels.cgfs.state.sbu/GELS/gels#/login"
-            ><img
+            ><img alt="WebGels"
               src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/WebGelsButton.png"
           /></a>
         </div>
       </div>
-      <img
-        src="/sites/CGFS/Style%20Library/images/cgfso365/quickapps/accordionfooter.png"
-        alt=""
-      />
+      <img src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/accordionfooter.png"
+        alt="" />
     </div>
   </div>
 </div>
 
-<script
-  type="text/javascript"
-  src="/sites/CGFS/Style%20Library/jquery.min.js"
-></script>
+<script type="text/javascript" src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/jquery.min.js"></script>
 <script>
-  $("#topBanner")[0].style.height = "220px";
-  $("#topContainer")[0].style.display = "none";
-  $("#topContainer2")[0].style.display = "block";
-  $("#topBanner").height = "220px";
-  $("#topBanner")[0].style.background =
-    "url('https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS-banner.png') no-repeat";
-  $("#aboutBG").mouseenter(function () {
-    console.log("show");
-    showOverlay();
-  });
+  (function () {
+    try {
+    $("#topBanner")[0].style.height = "220px";
+    $("#topContainer")[0].style.display = "none";
+    $("#topContainer2")[0].style.display = "block";
+    $("#topBanner").height = "220px";
+    $("#topBanner")[0].style.background =
+      "url('https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/CGFS-banner.png') no-repeat";
+ 
+    } catch {}
 
-  $("#aboutOverlay").mouseleave(function () {
-    console.log("hide");
-    hideOverlay();
-  });
+    $("#aboutBG")?.mouseenter(function () {
+      console.log("show");
+      showOverlay();
+    });
+    $("#aboutOverlay")?.mouseleave(function () {
+      console.log("hide");
+      hideOverlay();
+    });
+    showOverlay = function () {
+      $("#aboutOverlay").fadeIn(200, "linear");
+      $("#aboutOverlay")[0].style.position = "absolute";
+    };
+    hideOverlay = function () {
+      $("#aboutOverlay").fadeOut(200, "linear");
+    };
 
-  showOverlay = function () {
-    $("#aboutOverlay").fadeIn(200, "linear");
-    $("#aboutOverlay")[0].style.position = "absolute";
-  };
-  hideOverlay = function () {
-    $("#aboutOverlay").fadeOut(200, "linear");
-  };
-  const slider = document.getElementById("slider");
+  /* FIX #5: Accessible Quick Apps disclosure logic */
+ 
+    var openBtn = document.getElementById("openSlider");
+    var closeBtn = document.getElementById("closeSlider");
+    var panel = document.getElementById("slider");
 
-  document.getElementById("closeSlider").addEventListener("click", () => {
-    slider.classList.remove("active");
-  });
+    function openPanel() {
+      panel.hidden = false;
+      panel.classList.add("active");
+      openBtn.setAttribute("aria-expanded", "true");
+      closeBtn.focus();
+    }
 
-  document.getElementById("openSlider").addEventListener("click", () => {
-    slider.classList.add("active");
-  });
+    function closePanel() {
+      panel.classList.remove("active");
+      panel.hidden = true; // removes contained links from the accessibility tree & tab order
+      openBtn.setAttribute("aria-expanded", "false");
+      openBtn.focus();
+    }
+
+    openBtn.addEventListener("click", function () {
+      if (panel.hidden) {
+        openPanel();
+      } else {
+        closePanel();
+      }
+    });
+
+    closeBtn.addEventListener("click", closePanel);
+
+    panel.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" || e.keyCode === 27) {
+        closePanel();
+      }
+    });
+  })();
 </script>
