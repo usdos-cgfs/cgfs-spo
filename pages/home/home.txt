@@ -945,7 +945,7 @@
     <!-- CUSTOMER SUPPORT -->
     <div class="cards" id="card2">
       <div class="cardLabel">
-        <h2 class="cardLabelText">Customer Support</h2>
+        <h2 class="cardLabelText">Customer Engagement</h2>
       </div>
       <div class="cardShadow">
         <div class="linkContainer">
@@ -980,6 +980,12 @@
               <li>
                 <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Broadcast/">
                   Overseas Broadcast Notices
+                  <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Broadcast/SitePages/CGFS-Domestic-Broadcasts.aspx">
+                  Domestic Broadcast Notices
                   <span class="visually-hidden">(opens in a new tab)</span>
                 </a>
               </li>
