@@ -1002,7 +1002,7 @@
           <li>
             <a
               target="_blank"
-              href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/sitePages/Posts-Points-ofContact.aspx"
+              href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/sitePages/Posts-Points-of-Contact.aspx"
             >
               Post Financial Management POCs/Overseas Accountants
               <span class="visually-hidden">(opens in a new tab)</span>
