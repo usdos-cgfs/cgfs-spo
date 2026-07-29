@@ -14,7 +14,7 @@
     --gold: #ffc02a;
     --panel-dark: #2e2e2e;
     --link-blue: #24476a;
-    --hover-tint: rgba(137, 157, 175, 0.4);
+    --hover-tint: rgba(137, 157, 175, 0.7);
     --font-light:
       "Calibri Light", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     --font-heavy: "Arial Black", Arial, sans-serif;
