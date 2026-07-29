@@ -211,12 +211,12 @@
 
   .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item:hover {
     background: var(--gold);
-    color: var(--nav-blue) !important;
+    color: var(--link-blue) !important;
   }
 
   a.static.selected {
     background: var(--gold) !important;
-    color: var(--nav-blue) !important;
+    color: var(--link-blue) !important;
   }
 
   .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link {
