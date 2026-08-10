@@ -1589,15 +1589,6 @@
         </div>
         <div class="quick-link">
           <a
-            title="Payroll Customer Support Portal"
-            href="https://seirmprod.servicenowservices.com/cgfs"
-            ><img
-              alt="Payroll Customer Support Portal"
-              src="https://usdos.sharepoint.com/sites/CGFS/Style%20Library/images/cgfso365/quickapps/icons/pcsportal.png"
-          /></a>
-        </div>
-        <div class="quick-link">
-          <a
             title="WebGels"
             href="https://webgels.cgfs.state.sbu/GELS/gels#/login"
             ><img
