@@ -935,7 +935,7 @@
     >
       <a
         target="_blank"
-        href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/SiteAssets/SitePages/GFOHome(1)/AC-FY25-Announcement.pdf?web=1"
+        href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/GFMSACG"
       >
         <img
           alt="GFMS Annual Close Guidance"
