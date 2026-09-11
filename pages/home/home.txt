@@ -1002,7 +1002,7 @@
           <li>
             <a
               target="_blank"
-              href="https://usdos.sharepoint.com/sites/CGFS-GFS/GFO/sitePages/Posts-Points-of-Contact.aspx"
+              href="https://app.powerbigov.us/groups/me/reports/2d3e2859-6b64-45a5-89bb-154a11ee308d/ReportSectionb34c9cbc938d1a0fe7d0?ctid=66cf5074-5afe-48d1-a691-a12b2121f44b"
             >
               Post Financial Management POCs/Overseas Accountants
               <span class="visually-hidden">(opens in a new tab)</span>
