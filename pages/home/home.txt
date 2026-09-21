@@ -1081,7 +1081,7 @@
           <li>
             <a
               target="_blank"
-              href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Broadcast/"
+              href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Broadcast/SitePages/CGFS-Overseas-Broadcasts.aspx"
             >
               Overseas Broadcast Notices
               <span class="visually-hidden">(opens in a new tab)</span>
@@ -1099,7 +1099,7 @@
           <li>
             <a
               target="_blank"
-              href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Pages/GFSTraining.aspx"
+              href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/CGFSGlobalCustomerSupport&Training-GlobalTraining"
             >
               Global Financial Training Program
               <span class="visually-hidden">(opens in a new tab)</span>
@@ -1399,7 +1399,7 @@
           <li>
             <a
               target="_blank"
-              href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/PCS_Travel/Pages/GFSPCSTravel.aspx"
+              href="https://kb.cgfs.state.gov/s/article/CGFS-Knowledge-Base-36319"
             >
               PCS Travel Claim System Support
               <span class="visually-hidden">(opens in a new tab)</span>
