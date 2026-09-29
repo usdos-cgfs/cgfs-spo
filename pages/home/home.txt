@@ -1179,7 +1179,7 @@
           <li>
             <a
               target="_blank"
-              href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Download/"
+              href="https://usdos.sharepoint.com/sites/CGFS-GFS/CST/Download/SitePages/Software-and-Document-Download-Page.aspx"
             >
               Software &amp; Documentation Downloads
               <span class="visually-hidden">(opens in a new tab)</span>
