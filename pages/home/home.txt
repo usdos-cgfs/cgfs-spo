@@ -827,6 +827,78 @@
   }
 </style>
 
+<!-- ===== Redirect Notice Snippet ===== -->
+<div id="redirect-notice" role="alert" aria-live="polite"
+     style="max-width:640px;margin:40px auto;padding:24px 28px;border:2px solid #1a4480;
+            border-radius:8px;background:#f0f4fa;font-family:Segoe UI,Arial,sans-serif;
+            color:#1b1b1b;text-align:center;">
+  <h2 style="margin-top:0;color:#1a4480;">This page has moved</h2>
+  <p>The CGFS Intranet has a new home. <strong>Please update your bookmarks</strong> to:</p>
+  <p>
+    <a id="redirect-link"
+       href="https://usdos.sharepoint.com/sites/CGFS/SitePages/CGFS-Intranet.aspx"
+       style="color:#005ea2;word-break:break-all;">
+      https://usdos.sharepoint.com/sites/CGFS/SitePages/CGFS-Intranet.aspx
+    </a>
+  </p>
+  <p>You will be redirected automatically in
+    <span id="redirect-countdown" style="font-weight:bold;cursor:default;user-select:none;">5</span>
+    seconds.
+  </p>
+</div>
+
+<script>
+(function () {
+  var TARGET_URL = "https://usdos.sharepoint.com/sites/CGFS/SitePages/CGFS-Intranet.aspx";
+  var DELAY_SECONDS = 5;
+
+  var remaining = DELAY_SECONDS;
+  var paused = false;
+  var countdownEl = document.getElementById("redirect-countdown");
+
+  // Hidden pause method 1: add ?noredirect to the URL to start paused
+  if (/[?&]noredirect\b/i.test(window.location.search)) {
+    paused = true;
+  }
+
+  function updateIndicator() {
+    // Subtle visual cue only: the number dims while paused
+    countdownEl.style.opacity = paused ? "0.4" : "1";
+  }
+
+  function togglePause() {
+    paused = !paused;
+    updateIndicator();
+  }
+
+  function tick() {
+    if (paused) return;
+    remaining -= 1;
+    countdownEl.textContent = Math.max(remaining, 0);
+    if (remaining <= 0) {
+      clearInterval(timer);
+      // replace() keeps the old page out of history, so "Back" doesn't loop
+      window.location.replace(TARGET_URL);
+    }
+  }
+
+  // Hidden pause method 2: double-click the countdown number
+  countdownEl.addEventListener("dblclick", togglePause);
+
+  // Hidden pause method 3: press Alt + Shift + P (works on Windows and Mac)
+  document.addEventListener("keydown", function (e) {
+    if (e.altKey && e.shiftKey && e.code === "KeyP") {
+      e.preventDefault();
+      togglePause();
+    }
+  });
+
+  updateIndicator();
+  var timer = setInterval(tick, 1000);
+})();
+</script>
+<!-- ===== End Redirect Notice Snippet ===== -->
+
 <header class="home-banner">
   <a
     title="Engage CGFS Customer Portal"
