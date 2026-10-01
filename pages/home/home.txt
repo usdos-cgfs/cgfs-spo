@@ -828,6 +828,12 @@
 </style>
 
 <!-- ===== Redirect Notice Snippet ===== -->
+<style>
+  #redirect-notice p {
+    color: #1b1b1b;
+  }
+</style>
+
 <div id="redirect-notice" role="alert" aria-live="polite"
      style="max-width:640px;margin:40px auto;padding:24px 28px;border:2px solid #1a4480;
             border-radius:8px;background:#f0f4fa;font-family:Segoe UI,Arial,sans-serif;
